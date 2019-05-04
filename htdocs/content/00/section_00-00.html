@@ -1,0 +1,372 @@
+<style type="text/css"> 
+.sonne-regen-bg {
+	background:#F27935;
+	-webkit-transition: all 800ms ease-in-out; 
+       -moz-transition: all 800ms ease-in-out; 
+         -o-transition: all 800ms ease-in-out; 
+            transition: all 800ms ease-in-out; 
+}
+#lightning{
+  background:#fff;
+  opacity:0.8;
+  display:none;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;    
+}
+#cloud-path{
+  fill:#f27935;
+	-webkit-transition: all 800ms ease-in-out; 
+       -moz-transition: all 800ms ease-in-out; 
+         -o-transition: all 800ms ease-in-out; 
+            transition: all 800ms ease-in-out; 
+}
+.rain #cloud-path{
+	fill:#36495c;
+	-webkit-transition: all 800ms ease-in-out; 
+       -moz-transition: all 800ms ease-in-out; 
+         -o-transition: all 800ms ease-in-out; 
+            transition: all 800ms ease-in-out; 
+}
+.rain{
+	background:#36495c;
+	-webkit-transition: all 800ms ease-in-out; 
+       -moz-transition: all 800ms ease-in-out; 
+         -o-transition: all 800ms ease-in-out; 
+            transition: all 800ms ease-in-out; 
+}
+.rain #cloud-mask path{
+	stroke:#36495c;
+	-webkit-transition: all 800ms ease-in-out; 
+       -moz-transition: all 800ms ease-in-out; 
+         -o-transition: all 800ms ease-in-out; 
+            transition: all 800ms ease-in-out; 
+}
+#cloud-mask path{
+	stroke:#fff;
+	stroke-width:25px; 
+	-webkit-transition: all 800ms ease-in-out; 
+       -moz-transition: all 800ms ease-in-out; 
+         -o-transition: all 800ms ease-in-out; 
+            transition: all 800ms ease-in-out; 
+}
+
+#view-code{
+  color:#fff;  
+  opacity:0.6;
+  text-transform:uppercase;  
+  font:700 15px "Open Sans", sans-serif; 
+  text-decoration:none;
+  position:absolute;top:540px; left:50%;margin-left:-40px;
+}
+#view-code:hover{opacity:1;}
+#icon{
+	position:absolute; 
+	top:180px;
+	left:50%;
+	width:300px;
+	height:300px;
+	margin-left:-150px;	
+}
+.path{
+	stroke-dashoffset: 516;
+	-webkit-animation: fill 5s linear forwards;
+	-moz-animation: fill 5s linear forwards;
+	animation: fill 5s linear forwards;
+	stroke-dasharray: 40;
+}
+#sun{
+}
+#cloud-wrapper, #rain-mask{
+	position: absolute;
+	top: 30px;
+	left: 24px;
+}
+#cloud-mask path{
+	stroke:#f27935;
+	stroke-width:30px; 
+}
+#cloud-wrapper svg{
+	position: absolute;
+	top: 0px;
+	left: 0px;	
+}
+#sun{
+	position:relative;
+	overflow:hidden;
+	height:170px;
+	margin-top: 0px;
+	margin-left: 0px;
+	-webkit-transition: all 300ms ease-in-out; 
+       -moz-transition: all 300ms ease-in-out; 
+         -o-transition: all 300ms ease-in-out; 
+            transition: all 300ms ease-in-out; 
+}
+#sun.animatepos1{
+	margin-top: -16px;
+	margin-left: -21px;
+	-webkit-transition: all 400ms ease-in-out; 
+       -moz-transition: all 400ms ease-in-out; 
+         -o-transition: all 400ms ease-in-out; 
+            transition: all 400ms ease-in-out; 
+}
+#sun.animatepos2{
+	margin-top: 53px;
+	margin-left: 60px;
+	height:130px;
+	-webkit-transition: all 600ms ease-in-out; 
+       -moz-transition: all 600ms ease-in-out; 
+         -o-transition: all 600ms ease-in-out; 
+            transition: all 600ms ease-in-out; 
+}
+#sun line, 
+#sun circle, 
+#cloud path,
+#rain line{
+	stroke:#fff;
+	stroke-width:13px; 
+	stroke-linecap:round;
+}
+#rain line{
+	position:absolute;
+	top:0; 
+	left:0;
+	stroke-dasharray: 20,29;
+}
+#rain{
+	position:absolute;	
+	top: -397px;
+	left: 100px;	
+}
+#rain-mask.animate #rain{
+	top: 155px;
+	left: -40px;
+	-webkit-transition: all 1500ms linear; 
+       -moz-transition: all 1500ms linear; 
+         -o-transition: all 1500ms linear; 
+            transition: all 1500ms linear; 
+}
+
+#open-cloudL{
+	stroke-dasharray: 400;
+	stroke-dashoffset: 0;    	
+}
+.animate #open-cloudL, .animate #open-cloudR{
+	animation: fill 1s ease-in-out forwards;
+	-webkit-animation: fill 1s ease-in-out forwards;
+	-moz-animation: fill 1s ease-in-out forwards;
+	animation: fill 1s ease-in-out forwards;
+}
+#open-cloudR{
+	stroke-dasharray: 400;
+	stroke-dashoffset: 0; 
+}
+
+.animate2 #open-cloudR, .animate2 #open-cloudL{
+    animation: fill-out 1s ease-in-out forwards;
+	-webkit-animation: fill-out 1s ease-in-out forwards;
+	-moz-animation: fill-out 1s ease-in-out forwards;
+	animation: fill-out 1s ease-in-out forwards;
+}
+
+#rain-mask{
+	position: absolute;
+	top: 125px;
+	left: 10px;
+	width: 213px;
+	height: 132px;
+	overflow: hidden;
+}
+
+@-webkit-keyframes fill {
+	to {		
+			stroke-dashoffset: 400;
+	}
+}
+@-moz-keyframes fill {
+	to {
+			stroke-dashoffset: 400;
+	}
+}
+@keyframes fill {
+	to {
+			stroke-dashoffset: 400;	
+	}
+}
+
+
+@-webkit-keyframes fill-out {
+	to {		
+			stroke-dashoffset: 0;
+	}
+}
+@-moz-keyframes fill-out {
+	to {
+			stroke-dashoffset: 0;
+	}
+}
+@keyframes fill-out {
+	to {
+			stroke-dashoffset: 0;	
+	}
+}
+</style>
+
+<div class="content-inner" id="sonne-regen-bg" style="height:100% !important; width:100% !important;">
+	<div class="container">
+		<!-- START: 1st row -->
+		<div class="row"  style="margin-top:55px">
+			<div class="col-xs-5  col-sm-4  col-md-4  col-lg-4">
+				<!-- intentionally empty col to create space -->
+			</div>	
+			<div class="col-xs-5  col-sm-4  col-md-4  col-lg-4">
+					<div id="icon content ">
+						<div id="sun">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">                   
+							   <g>             
+								<circle style="fill:none;" cx="84.5" cy="84" r="38.4"/>
+								<line style="fill:none;"  x1="85" y1="139.4" x2="85" y2="158"/>
+								<line style="fill:none;" x1="85" y1="10.9" x2="85" y2="28.3"/>
+								<line style="fill:none;" x1="123.8" y1="123.3" x2="137" y2="136.5"/>
+								<line style="fill:none;" x1="33" y1="32.4" x2="45.3" y2="44.8"/>
+								<line style="fill:none;" x1="46.1" y1="123.3" x2="33" y2="136.5"/>
+								<line style="fill:none;" x1="137" y1="32.4" x2="124.7" y2="44.8"/>
+								<line style="fill:none;" x1="30.1" y1="84.5" x2="11.4" y2="84.5"/>
+								<line style="fill:none;" x1="158.6" y1="84.5" x2="141.1" y2="84.5"/>
+							   </g>                
+							 </svg>
+						</div>
+
+						<div id="cloud-wrapper">
+							<svg version="1.1" id="cloud-mask" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">                   
+							   <g>
+								<path id="cloud-path" d="M201.1,165.1c21.5,0,38.9-17.4,38.9-38.9c0-17.8-12-32.8-28.3-37.4c0-0.5,0.1-1,0.1-1.4
+								c0-35.3-28.6-64-64-64c-21.9,0-41.2,11-52.7,27.8c-4.8-3.8-10.9-6.1-17.5-6.1c-15.6,0-28.2,12.6-28.2,28.2c0,2.3,0.3,4.5,0.8,6.6
+								C27.8,81.2,10,99.8,10,122.5c0,23.6,19.1,42.6,42.6,42.6"/>       
+							   </g>   
+							</svg>
+							<svg version="1.1" id="cloud" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">                   
+							   <g>
+								<path id="cloud-path" d="M201.1,165.1c21.5,0,38.9-17.4,38.9-38.9c0-17.8-12-32.8-28.3-37.4c0-0.5,0.1-1,0.1-1.4
+								c0-35.3-28.6-64-64-64c-21.9,0-41.2,11-52.7,27.8c-4.8-3.8-10.9-6.1-17.5-6.1c-15.6,0-28.2,12.6-28.2,28.2c0,2.3,0.3,4.5,0.8,6.6
+								C27.8,81.2,10,99.8,10,122.5c0,23.6,19.1,42.6,42.6,42.6"/>
+								<path style="fill:none;" id="open-cloudL" d="M52.6,165.1H127"/>
+								<path style="fill:none;" id="open-cloudR" d="M201.1,165.1H125"/>  
+							   </g>   
+							</svg>
+						</div>
+
+						<div id="rain-mask">
+							<svg id="rain" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="219.1px" height="417.1px" viewBox="0 0 219.1 417.1" style="enable-background:new 0 0 219.1 417.1;" xml:space="preserve">
+								<line style="fill:none;" x1="112.4" y1="14.5" x2="13.6" y2="383.9"/>
+								<line style="fill:none;" x1="188.8" y1="14.5" x2="90" y2="383.9"/>
+								<line style="fill:none;" x1="144" y1="38.3" x2="45.3" y2="407.7"/>
+							</svg>
+						</div>
+					</div>
+					<div id="lightning"></div>
+			</div>
+			<div class="col-xs-2  col-sm-2  col-md-2  col-lg-2">
+				<!-- intentionally empty col to create space -->		
+			</div>
+		</div>
+		<!-- END: 1st row, START: 2nd row -->
+		<div class="row">	
+			<div class="col-xs-2  col-sm-2  col-md-2  col-lg-2">
+			</div>					
+			<div class="col-xs-6  col-sm-6  col-md-6  col-lg-6">
+				<h1>Wir retten<br>Projekte</h1>
+				<div class="owl-carousel_index">
+					<div class="claim-first">accept<strong class="claim-first-dot">.</strong>it</div>
+					<div class="claim-first">buy<strong class="claim-first-dot">.</strong>it</div>
+					<div class="claim-first">survive<strong class="claim-first-dot">.</strong>it</div>
+					<div class="claim-first">tailor<strong class="claim-first-dot">.</strong>it</div>
+					<div class="claim-first">turn<strong class="claim-first-dot">.</strong>it</div>
+				</div>				
+			</div>
+			<div class="col-xs-4  col-sm-4  col-md-4  col-lg-4">
+			</div>
+		</div>
+		<!-- END: 2nd row -->
+	</div>
+</div>
+
+
+<script  type="text/javascript">
+$(document).ready(function(){	
+	
+  makeRain();
+  setInterval(function(){  
+      makeRain();
+  }, 6000);	
+});
+
+
+function rain(){
+   $('#sonne-regen-bg').addClass("rain");
+   // $('body').addClass("rain");  
+   setTimeout(function(){	
+   	   $("#lightning").show();
+       setTimeout(function(){	
+           $("#lightning").css({opacity:0.2});
+                 setTimeout(function(){	           
+                 		$("#lightning").css({opacity:0.8});
+                 		setTimeout(function(){	
+                        $("#lightning").hide();
+                    }, 100);             
+                  }, 100);                        
+       }, 100);
+   }, 1200);
+   $('#sun').addClass("animatepos1"); 	
+   $("#sonne-regen-bg").animate({ backgroundColor: "#000000" }, 1000);
+   // $("html body").animate({ backgroundColor: "#000000" }, 1000); 
+		$('#cloud-wrapper').removeClass("animate2").addClass('animate');		
+		setTimeout(function(){			
+			$('#sun').removeClass("animatepos1").addClass("animatepos2");
+			setTimeout(function(){$('#rain-mask').addClass("animate");}, 700);			
+		}, 400);
+	}
+	
+function sunny(){		
+    $('#sonne-regen-bg').removeClass("rain");
+    // $('body').removeClass("rain");	
+		$('#open-cloudR, #open-cloudL').css('stroke-dashoffset', 400);		
+		$('#cloud-wrapper').addClass("animate2");
+		setTimeout(function(){	
+			$('#sun').removeClass("animatepos2").addClass("animatepos1");
+			setTimeout(function(){
+				$('#sun').removeClass("animatepos1");        
+        $('#open-cloudR, #open-cloudL').css('stroke-dashoffset', 0);
+        $('#rain-mask').removeClass("animate");
+			}, 400);		
+		}, 300);
+	}
+
+function makeRain(){
+  	rain();
+     setTimeout(function(){							
+       sunny();
+     }, 2600);
+}
+</script>
+
+<script  async type="text/javascript">	
+	// owl2-Slider (to be able to slide any div horizontally)
+	$(document).ready(function() {
+		var owl = $('.owl-carousel_index');
+			owl.owlCarousel({
+			margin:0, // margin-right(px) on item.
+			items: 1, // The number of items you want to see on the screen.
+			loop: true, // Inifnity loop. Duplicate last and first items to get loop illusion.
+			autoWidth: false, // Set non grid content. Try using width style on divs.
+			dots: false, // Show dots navigation.
+			autoplay: true, // Autoplay.
+			autoplayHoverPause: true, // Pause on mouse hover.
+			autoplaySpeed: false, // autoplay speed.
+			smartSpeed: 200,  // Speed Calculate. Bewegungsgeschwindigkeit in ms..
+			fluidSpeed: 5, // Speed Calculate. Wechselgeschwindigkeit in s..
+		});
+	})
+</script>

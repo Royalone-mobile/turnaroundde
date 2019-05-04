@@ -1,0 +1,624 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,300italic,400,400italic,700,700italic);
+
+
+/* START: contact-panel - owl2 */
+.contact_bottom {
+	position: absolute;
+	bottom: 0px;
+	width: 100vmax; /* calculated, because width=100% = complete width of ALL slides*/
+	background-color: #31859C;
+	padding: 10px;
+	}
+.contact_container {
+	height: 100px;	
+	background-color: #fff;
+	}
+.contact_avatar {
+  height: 70px;
+  line-height: 70px;
+  width: 70px;
+}
+.contact_text1 {
+	font-size: 16px;
+	margin-bottom: 25 px;
+	color: #7F7F7F;
+	font-weight: bold;
+}
+.contact_text2 {
+	font-size: 12px;
+	color: #7F7F7F;
+	line-height: 110%;
+}
+/* END: contact-panel owl2 */
+
+
+
+
+/* navigation indicator on the right side (left/right and arrow top/down ) */
+
+.pindicator-container {
+  position: fixed;
+  right: 16px;
+  top: 64px;
+  z-index: 20;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: margin-bottom 0.3s cubic-bezier(0.4, 0, 0.2, 1), right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: margin-bottom 0.3s cubic-bezier(0.4, 0, 0.2, 1), right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pindicator {
+  background-color: transparent;
+  color: #ffffff;
+  height: 120px;
+  width: 60px;
+  border-radius: 60px;
+  clear: both;
+  display: block;
+  font-size: 24px;
+  margin: 0px auto;
+  padding: 0px 0;
+  position: relative;
+  text-align: center;
+
+  -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* currently not used, as the red box is too intrusive 
+.pindicator-redround {
+  background-color: #f44336;
+  color: #ffffff;
+  height: 120px;
+  width: 60px;
+  border-radius: 60px;
+  clear: both;
+  display: block;
+  font-size: 24px;
+  margin: 0px auto;
+  padding: 0px 0;
+  position: relative;
+  text-align: center;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: box-shadow, opacity, -webkit-transform;
+  transition-property: box-shadow, opacity, transform;
+}
+ */
+
+
+
+
+/* START menu trancparency and font-size of toggle menues: changes according to own design */
+.page-blue .header {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.menu-open.page-blue .header {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+.page-blue .header .nav > li > a .header-close::after {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.menu-toggle {
+    font-size: 18px !important;
+  }
+ 
+/* padding of navigation left/right and menu item padding*/
+.nav a, .nav .a {
+    padding-left: 5px;
+	padding-right:5px;
+}
+/* correction of padding of navigation: !!!ONLY left side */
+.nav-right a{
+	padding-left: 15px;
+}
+
+/* width of navigation left/right */
+.menu-scroll {
+    height: 100%;
+    max-width: calc(100% - 25px);
+}
+/* correction of picture/searchfield in navigation right */
+.menu-top-info {
+    padding: 20px 16px 1px 16px;
+}
+.menu-top-info-suche {
+    padding: 36px 16px;
+    position: relative;
+}
+@media only screen and (min-width: 480px) {
+  .menu-wrap {
+    padding-right: 0px;
+    right: -32px;
+  }
+}
+  .menu-top-form {
+    margin-right: 20px;
+}
+/* correction of submenue-toggle menu left */
+.menu-collapse-toggle {
+    padding-top: 6px;
+	}
+@media only screen and (min-width: 768px) {
+.menu-collapse-toggle {
+    padding: 6px 40px;
+	}
+}
+
+  
+.claim-first{
+   font-family: 'Roboto', sans-serif;
+   font-weight: 700;
+   color: #fff;
+   font-size: 15px;
+   line-height: 1.3em;   
+   padding: 2px;
+   padding-left: 5px;
+   padding-top: 0px;
+   margin: 5px;
+   background: #FFC926;
+   border: 1px dashed #fff;
+   border-radius: 2px;
+   box-shadow: 0 0 0 2px #FFC926, 1px 1px 2px 2px rgba(10, 10, 0, 0.5);
+   width: 100px;
+}
+.claim-first-dot{
+   color: red;
+   font-size: 35px;
+}
+
+.claim-second{
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+   color: #fff;
+   font-size: 13px;
+   line-height: 1.3em;
+   padding-top: 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+
+h1,
+.h1 {
+  font-size: 56px;
+  line-height: 50px;
+}
+ 
+/* END Menu-Trancparency */
+
+/* START Background-Color Transitions */
+body {
+  /* delete background-color */
+/*
+  background-color: none;
+  background-image: none;
+*/
+  color: #212121;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: subpixel-antialiased;
+  /* necessary for background-color transition */
+  -webkit-transition: background-color .5s;
+  -moz-transition: background-color .5s;
+  -o-transition: background-color .5s;
+  -ms-transition: background-color .5s;
+  transition: background-color .5s;
+}
+ /* necessary for background-color transition */
+.scroll-enabled .section  {background:none !important} /* all screens have transparent background-color */
+.bg-color_section00 {background-color:#FBFAFB}
+.bg-color_section01 {background-color:#FFFFFF}
+.bg-color_section02 {background-color:#FBFAFB}
+.bg-color_section03 {background-color:#03BCD4}
+.bg-color_section04 {background-color:#FFFFFF}
+.bg-color_section05 {background-color:#FBFAFB}
+.bg-color_section06 {background-color:#0F9D58}
+.bg-color_section07 {background-color:#FFFFFF}
+.bg-color_section08 {background-color:#F27935}
+.bg-color_section09 {background-color:#FBFAFB}
+.bg-color_section10 {background-color:#797C82}
+
+/* alternative bg-colors
+#ECF0F1 / #6BB9F0 / #EEEEEE / #FFFFFF / #5C97BF / #89C4F4 / #ECF0F1 / #E4F1FE / #F2784B / #C5EFF7 / #ECF0F1
+*/
+
+
+/* START COLLECTION: useful snippets*/
+
+/* Cut text (truncate) if space is not available
+http://tympanus.net/codrops/2012/10/25/kick-start-your-project-a-collection-of-handy-css-snippets/
+*/
+.truncate {
+	display: block;
+	white: 100%; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;  /* IE 6+, FF 7+, Op 11+, Saf 1.3+, Chr 1+ */
+} 
+
+/* Hide on specific devices (small, big, etc.)
+http://tympanus.net/codrops/2012/10/25/kick-start-your-project-a-collection-of-handy-css-snippets/ 
+*/
+.visuallyhidden {
+	position: absolute;
+	width: 1px; /* Setting this to 0 make it invisible for VoiceOver */
+	height: 1px; /* Setting this to 0 make it invisible for VoiceOver */
+	padding: 0;
+    margin: -1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;    
+}
+
+@media only screen and (max-width : 600px) {
+  .hide-on-small-only, .tabs-wrapper, .hide-on-small-and-down {
+    display: none !important; } }
+
+@media only screen and (max-width : 992px) {
+  .hide-on-med-and-down {
+    display: none !important; } }
+
+@media only screen and (min-width : 601px) {
+  .hide-on-med-and-up {
+    display: none !important; } }
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .hide-on-med-only {
+    display: none !important; } }
+
+@media only screen and (min-width : 993px) {
+  .hide-on-large-only {
+    display: none !important; } }
+
+@media only screen and (min-width : 993px) {
+  .show-on-large {
+    display: initial !important; } }
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .show-on-medium {
+    display: initial !important; } }
+
+@media only screen and (max-width : 600px) {
+  .show-on-small {
+    display: initial !important; } }
+
+@media only screen and (min-width : 601px) {
+  .show-on-medium-and-up {
+    display: initial !important; } }
+
+@media only screen and (max-width : 992px) {
+  .show-on-medium-and-down {
+    display: initial !important; } }
+
+@media only screen and (max-width : 600px) {
+  .center-on-small-only {
+    text-align: center; } }
+/* END COLLECTION: useful snippets*/
+
+/* START SECTION 10: test case for viewport-units*/
+.viewport-unit_circle {
+  width: 20vmax;
+  height: 20vmax;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+  top: calc(50vh -  10vmax );
+  left: calc(50vw -  10vmax );
+  font-size: 1.66667vmax;
+  content: '     viewport-units-buggyfill; width: 20vmax ; height:  20vmax ; font-size: 1.66667vmax ;top: calc(50vh -  10vmax ); left: calc(50vw -  10vmax );     ';
+}
+.viewport-unit_circle span {
+  color: white;
+  width: 20vmax;
+  height: 20vmax;
+  padding: 10px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.4vmax;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  content: 'viewport-units-buggyfill; width: 40vmax ; height:  20vmax ; ';
+}
+.viewport-unit_h1 {
+	width: 40vmax;
+	font-size: calc(2 * 1.66667vmax);
+	content: '     viewport-units-buggyfill; width: 40vmax ; font-size: calc(2 * 1.66667vmax);    ';
+}
+/* END SECTION 10: test case for viewport-units*/
+
+/* START: swiping hand in menu */
+@import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css";
+
+.swipe {
+  display: inline-block;
+  color: #FFF;
+  -moz-animation-name: swipe;
+  -webkit-animation-name: swipe;
+  animation-name: swipe;
+  -moz-animation-duration: 2700ms;
+  -webkit-animation-duration: 2700ms;
+  animation-duration: 2700ms;
+  -moz-animation-delay: 250ms;
+  -webkit-animation-delay: 250ms;
+  animation-delay: 250ms;
+  -moz-animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.swipe .fa-long-arrow-left,
+.swipe .fa-long-arrow-right {
+  font-size: 0.65em;
+  color: #FFF;
+}
+.swipe .fa-long-arrow-left {
+  -moz-transform: scaleX(0.75) skew(20deg) translateY(-0.9em) translateX(1.25em);
+  -ms-transform: scaleX(0.75) skew(20deg) translateY(-0.9em) translateX(1.25em);
+  -webkit-transform: scaleX(0.75) skew(20deg) translateY(-0.9em) translateX(1.25em);
+  transform: scaleX(0.75) skew(20deg) translateY(-0.9em) translateX(1.25em);
+}
+.swipe .fa-long-arrow-right {
+  -moz-transform: scaleX(0.75) skew(20deg) translateY(-0.9em) translateX(-0.95em);
+  -ms-transform: scaleX(0.75) skew(20deg) translateY(-0.9em) translateX(-0.95em);
+  -webkit-transform: scaleX(0.75) skew(20deg) translateY(-0.9em) translateX(-0.95em);
+  transform: scaleX(0.75) skew(20deg) translateY(-0.9em) translateX(-0.95em);
+}
+.swipe .fa-hand-o-up {
+  -moz-transform: scaleY(1.2);
+  -ms-transform: scaleY(1.2);
+  -webkit-transform: scaleY(1.2);
+  transform: scaleY(1.2);
+  -moz-animation-name: swipe-rotate;
+  -webkit-animation-name: swipe-rotate;
+  animation-name: swipe-rotate;
+  -moz-animation-duration: 2700ms;
+  -webkit-animation-duration: 2700ms;
+  animation-duration: 2700ms;
+  -moz-animation-delay: 250ms;
+  -webkit-animation-delay: 250ms;
+  animation-delay: 250ms;
+  -moz-animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-moz-keyframes swipe {
+  0% {
+    -moz-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10% {
+    -moz-transform: translateX(-0.1em);
+    transform: translateX(-0.1em);
+  }
+  20% {
+    -moz-transform: translateX(0.1em);
+    transform: translateX(0.1em);
+  }
+  30% {
+    -moz-transform: translateX(-0.1em);
+    transform: translateX(-0.1em);
+  }
+  40% {
+    -moz-transform: translateX(0.1em);
+    transform: translateX(0.1em);
+  }
+  50% {
+    -moz-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -moz-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes swipe {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10% {
+    -webkit-transform: translateX(-0.1em);
+    transform: translateX(-0.1em);
+  }
+  20% {
+    -webkit-transform: translateX(0.1em);
+    transform: translateX(0.1em);
+  }
+  30% {
+    -webkit-transform: translateX(-0.1em);
+    transform: translateX(-0.1em);
+  }
+  40% {
+    -webkit-transform: translateX(0.1em);
+    transform: translateX(0.1em);
+  }
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes swipe {
+  0% {
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10% {
+    -moz-transform: translateX(-0.1em);
+    -ms-transform: translateX(-0.1em);
+    -webkit-transform: translateX(-0.1em);
+    transform: translateX(-0.1em);
+  }
+  20% {
+    -moz-transform: translateX(0.1em);
+    -ms-transform: translateX(0.1em);
+    -webkit-transform: translateX(0.1em);
+    transform: translateX(0.1em);
+  }
+  30% {
+    -moz-transform: translateX(-0.1em);
+    -ms-transform: translateX(-0.1em);
+    -webkit-transform: translateX(-0.1em);
+    transform: translateX(-0.1em);
+  }
+  40% {
+    -moz-transform: translateX(0.1em);
+    -ms-transform: translateX(0.1em);
+    -webkit-transform: translateX(0.1em);
+    transform: translateX(0.1em);
+  }
+  50% {
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes swipe-rotate {
+  0% {
+    -moz-transform: scaleY(1.2) skew(0);
+    transform: scaleY(1.2) skew(0);
+  }
+  10% {
+    -moz-transform: scaleY(1.2) skew(5deg);
+    transform: scaleY(1.2) skew(5deg);
+  }
+  20% {
+    -moz-transform: scaleY(1.2) skew(-5deg);
+    transform: scaleY(1.2) skew(-5deg);
+  }
+  30% {
+    -moz-transform: scaleY(1.2) skew(5deg);
+    transform: scaleY(1.2) skew(5deg);
+  }
+  40% {
+    -moz-transform: scaleY(1.2) skew(-5deg);
+    transform: scaleY(1.2) skew(-5deg);
+  }
+  50% {
+    -moz-transform: scaleY(1.2) skew(0);
+    transform: scaleY(1.2) skew(0);
+  }
+  100% {
+    -moz-transform: scaleY(1.2) skew(0);
+    transform: scaleY(1.2) skew(0);
+  }
+}
+@-webkit-keyframes swipe-rotate {
+  0% {
+    -webkit-transform: scaleY(1.2) skew(0);
+    transform: scaleY(1.2) skew(0);
+  }
+  10% {
+    -webkit-transform: scaleY(1.2) skew(5deg);
+    transform: scaleY(1.2) skew(5deg);
+  }
+  20% {
+    -webkit-transform: scaleY(1.2) skew(-5deg);
+    transform: scaleY(1.2) skew(-5deg);
+  }
+  30% {
+    -webkit-transform: scaleY(1.2) skew(5deg);
+    transform: scaleY(1.2) skew(5deg);
+  }
+  40% {
+    -webkit-transform: scaleY(1.2) skew(-5deg);
+    transform: scaleY(1.2) skew(-5deg);
+  }
+  50% {
+    -webkit-transform: scaleY(1.2) skew(0);
+    transform: scaleY(1.2) skew(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1.2) skew(0);
+    transform: scaleY(1.2) skew(0);
+  }
+}
+@keyframes swipe-rotate {
+  0% {
+    -moz-transform: scaleY(1.2) skew(0);
+    -ms-transform: scaleY(1.2) skew(0);
+    -webkit-transform: scaleY(1.2) skew(0);
+    transform: scaleY(1.2) skew(0);
+  }
+  10% {
+    -moz-transform: scaleY(1.2) skew(5deg);
+    -ms-transform: scaleY(1.2) skew(5deg);
+    -webkit-transform: scaleY(1.2) skew(5deg);
+    transform: scaleY(1.2) skew(5deg);
+  }
+  20% {
+    -moz-transform: scaleY(1.2) skew(-5deg);
+    -ms-transform: scaleY(1.2) skew(-5deg);
+    -webkit-transform: scaleY(1.2) skew(-5deg);
+    transform: scaleY(1.2) skew(-5deg);
+  }
+  30% {
+    -moz-transform: scaleY(1.2) skew(5deg);
+    -ms-transform: scaleY(1.2) skew(5deg);
+    -webkit-transform: scaleY(1.2) skew(5deg);
+    transform: scaleY(1.2) skew(5deg);
+  }
+  40% {
+    -moz-transform: scaleY(1.2) skew(-5deg);
+    -ms-transform: scaleY(1.2) skew(-5deg);
+    -webkit-transform: scaleY(1.2) skew(-5deg);
+    transform: scaleY(1.2) skew(-5deg);
+  }
+  50% {
+    -moz-transform: scaleY(1.2) skew(0);
+    -ms-transform: scaleY(1.2) skew(0);
+    -webkit-transform: scaleY(1.2) skew(0);
+    transform: scaleY(1.2) skew(0);
+  }
+  100% {
+    -moz-transform: scaleY(1.2) skew(0);
+    -ms-transform: scaleY(1.2) skew(0);
+    -webkit-transform: scaleY(1.2) skew(0);
+    transform: scaleY(1.2) skew(0);
+  }
+}
+/* END: swiping hand in menu */
+
+

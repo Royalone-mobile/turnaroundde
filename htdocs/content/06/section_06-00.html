@@ -1,0 +1,98 @@
+<style>
+.knowledge { 
+	/* height: 150px; */
+	width: 50%;
+	padding: 10px;
+	background: #36b391; 
+	position: relative;
+	border: 3px;
+	border: 3px solid #fff;
+	margin-bottom: 15px;
+}
+.knowledge:before { 
+	width: 0; 
+	content: ''; 
+	position: absolute; 
+	top: 0; 
+	right: 0; 
+	border-top: 25px solid white; 
+	border-left: 25px solid #36b391; 
+}
+.knowledge:after { 
+	width: 0; 
+	content: ''; 
+	position: absolute; 
+	top: -3px; 
+	right: -3px; 
+	border-top: 27px solid #36b391; /*abdeckende Farbe rechts oben */
+	border-left: 27px solid transparent; 
+}
+.knowledge_text1 {
+   font-size: 12px; 
+   font-weight: bold; 
+   line-height: 12px;
+   color: #fff;
+   margin: 0px; 
+}
+.knowledge_text2 {
+	font-size: 12px; 
+	line-height: 15px;
+	color: #fff;
+	margin: 0px; 
+}    
+ </style>
+ 
+ <div class="content" >
+	<div class="content-inner">
+		<div class="container" style="margin-top:55px">
+			<!-- START: row -->
+			<div class="row">
+			
+				<!-- right div -->
+				<div class="col-xs-12	col-sm-4	col-md-4	col-lg-4">
+						<h1>Wissen</h1><!-- alternative: Turnaround-Wissen -->
+				</div>
+
+				<!-- left div -->
+				<div class="col-xs-12	col-sm-7 col-sm-offset-1	col-md-7 col-md-offset-1	col-lg-7 col-md-offset-1">
+					<!-- emtpy -->
+				</div>				
+			</div>	
+			<!-- END: row -->
+			
+			<!-- START: 2nd row -->			
+			<div class="row">
+				<!-- left div -->
+				<div class="col-xs-12	col-sm-4	col-md-4	col-lg-4">
+						<p style="font-size: 14px; color: #fff; margin-top: 0px;">
+							Wie kann man Fehler vermeiden? Welche Maßnahmen sind am Wichtigsten?<br>
+							Unsere Wissensdatenbank gibt Ihnen erste Antworten!
+						</p>
+						<button type="button" class="btn btn-yellow">> Ihr Themenvorschlag</button>
+				</div>
+
+				<!-- right div -->
+				<div class="col-xs-12	col-sm-7 col-sm-offset-1	col-md-7 col-md-offset-1	col-lg-7 col-md-offset-1">
+					<!-- START: knowledge-areas -->
+					<div class="knowledge">
+						<div class="knowledge_text1">Wissen</div>
+						<div class="knowledge_text2">Mit Balanced Score Card den Projekterfolg bestimmen.</div>
+					</div>
+					<div class="knowledge">
+						<div class="knowledge_text1">Psychologie</div>
+						<div class="knowledge_text2">Warum das Akzeptieren eigener Fehler so schwer fällt.</div>
+					</div>
+					<div class="knowledge">
+						<div class="knowledge_text1">Methode</div>
+						<div class="knowledge_text2">Die größten Fehler im Projekt-Management.</div>
+					</div>				
+					<div class="knowledge">
+						<div class="knowledge_text1">Übersicht</div>
+						<div class="knowledge_text2">...weitere Themen in der Übersicht.</div>
+					</div>	
+					<!-- END: knowledge-areas -->	
+				</div>				
+			</div>
+		</div>
+	</div>
+</div>

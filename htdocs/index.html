@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="initial-scale=1.0, width=device-width, user-scalable=yes" name="viewport">
+	<title>PS | projekte-sanieren.de</title>
+
+
+	<!-- START: css -->
+	<!-- if no vh|vw|vmin|vmax + calc within css use data-viewport-units-buggyfill="ignore" to improve performance -->
+	<link rel="stylesheet" type="text/css" href="assets/css/material.base.css" data-viewport-units-buggyfill="ignore">
+	<link rel="stylesheet" type="text/css" href="assets/css/fullPageScroll.css" data-viewport-units-buggyfill="ignore">
+	<link rel="stylesheet" type="text/css" href="assets/css/owl.Carousel.css" data-viewport-units-buggyfill="ignore">
+	<link rel="stylesheet" type="text/css" href="assets/css/tooltipster.css" data-viewport-units-buggyfill="ignore">
+
+	<!-- css with vh|vw|vmin|vmax + calc, only this css can use this values -->
+	<link rel="stylesheet" type="text/css" href="assets/css/content.css" >
+	<!-- END: css -->
+</head>
+
+
+<body class="avoid-fout page-blue">
+	<!-- START: avoid-fout: indicates Loading process -->
+	<div class="avoid-fout-indicator avoid-fout-indicator-fixed">
+		<div class="progress-circular progress-circular-alt progress-circular-center">
+			<div class="progress-circular-wrapper">
+				<div class="progress-circular-inner">
+					<div class="progress-circular-left">
+						<div class="progress-circular-spinner"></div>
+					</div>
+					<div class="progress-circular-gap"></div>
+					<div class="progress-circular-right">
+						<div class="progress-circular-spinner"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END: avoid-fout: indicates Loading process -->
+<!-- ********** START OF HEADER-MENU ********** -->
+	<header class="header">
+		<ul class="nav nav-list pull-left">
+			<li id="tooltip_01">
+				<a data-toggle="menu" href="#menu">
+					<span class="access-hide">Menu</span>
+					<span class="icon icon-menu icon-lg"></span>
+				</a>
+			</li>
+			<li  id="tooltip_02">
+				<a class="header-logo" href="index.html">
+					<svg xmlns="http://www.w3.org/2000/svg" width="107.5" height="36" viewBox="0 0 107.5 36">
+						<g fill="#FFF">
+							<path d="M46.235 18.224c-.514.22-1 .403-1.458.553-.458.15-1.02.225-1.683.225-.98 0-1.67-.253-2.068-.76-.4-.506-.598-1.22-.598-2.145V7.98H38.32V6.815h2.157v-3.73h2.157v3.73h3.353V7.98h-3.33v6.696c0 .502.018.92.053 1.257.036.336.12.63.255.88.126.236.316.414.57.535.25.122.59.183 1.018.183.197 0 .487-.01.87-.05.384-.03.655-.08.813-.14v.89zm13.685.303l-3.802.268-.178-.17v-1.52h-.07c-.19.204-.404.42-.64.65-.238.232-.51.44-.82.626-.354.22-.698.39-1.03.5-.332.12-.802.17-1.41.17-1.035 0-1.823-.34-2.364-1.04-.54-.69-.812-1.69-.812-3.02V9.26c0-.292-.054-.537-.16-.735-.106-.2-.263-.37-.468-.517-.143-.097-.32-.168-.533-.212-.213-.044-.438-.075-.676-.09v-.79l3.898-.293.178.17v8.324c0 .867.19 1.52.57 1.956.378.437.832.655 1.362.655.434 0 .82-.07 1.16-.207.34-.13.625-.3.854-.48.21-.17.4-.35.56-.54.16-.19.28-.36.37-.53V9.18c0-.27-.06-.505-.17-.71s-.27-.385-.47-.53c-.14-.097-.36-.156-.64-.176-.28-.02-.6-.04-.94-.054v-.79l4.24-.293.18.17v9.513c0 .275.05.51.16.704.11.195.26.36.46.5.14.09.31.147.5.175.2.02.41.04.65.05v.79zM70.3 8.31c0 .412-.098.78-.295 1.1-.198.32-.502.48-.913.48-.442 0-.78-.118-1.013-.354-.24-.235-.35-.494-.35-.777 0-.18.01-.34.04-.49l.07-.44c-.37 0-.81.15-1.31.46-.5.31-.92.74-1.27 1.31v6.97c0 .28.05.51.16.69s.27.31.5.4c.19.08.45.14.76.18.31.04.58.07.81.08v.8h-6.16v-.8l.56-.05c.19-.02.36-.05.5-.1.22-.08.38-.2.49-.39.11-.18.16-.42.16-.71V9.3c0-.25-.06-.5-.17-.74-.12-.243-.28-.44-.48-.583-.15-.097-.33-.168-.53-.212s-.43-.075-.67-.09v-.79l3.88-.27.17.17v1.69h.06c.49-.656 1.03-1.154 1.63-1.495.6-.34 1.15-.51 1.65-.51.493 0 .9.166 1.21.498s.47.778.47 1.337zm13.9 10.436h-5.724v-.802l.598-.05c.217-.015.397-.047.54-.096.22-.073.384-.2.49-.383.107-.182.16-.42.16-.71v-6.16c0-.85-.194-1.507-.585-1.968-.4-.462-.87-.693-1.43-.693-.42 0-.8.067-1.15.2s-.66.298-.93.493c-.26.186-.47.387-.62.6-.16.216-.27.388-.34.518v6.89c0 .274.05.5.16.68.11.177.27.315.5.412.16.08.34.142.54.183.19.04.39.07.6.085v.802h-5.72v-.802l.56-.05c.19-.015.36-.047.5-.096.22-.08.38-.2.49-.39.11-.18.16-.42.16-.71V9.3c0-.274-.06-.53-.17-.76-.12-.23-.28-.42-.48-.564-.15-.097-.33-.168-.54-.21s-.43-.077-.67-.093v-.79l3.88-.268.16.17v1.69h.06c.18-.197.42-.43.71-.7.28-.27.55-.493.8-.663.29-.195.64-.356 1.04-.486s.86-.193 1.36-.193c1.12 0 1.95.358 2.49 1.075s.812 1.67.812 2.86V16.6c0 .284.042.513.14.687.09.173.252.31.482.406.19.08.35.137.49.17.14.032.33.056.57.072v.802z"/>
+							<path stroke="#FFF" stroke-miterlimit="10" d="M89.697 17.35c0 .453-.16.84-.48 1.16s-.7.48-1.144.48-.823-.16-1.144-.48c-.32-.32-.48-.707-.48-1.16 0-.454.16-.845.48-1.173.32-.328.7-.492 1.14-.492s.82.164 1.14.492.48.72.48 1.172z"/>
+							<path d="M97.85 18.746h-5.652v-.802l.563-.05c.2-.015.37-.047.51-.096.22-.073.39-.2.49-.383.11-.182.16-.42.16-.71v-7.4c0-.258-.05-.495-.17-.71-.11-.214-.27-.395-.48-.54-.15-.098-.37-.18-.65-.25s-.54-.112-.78-.128v-.79l4.13-.268.17.17v9.76c0 .28.06.52.16.7.11.18.28.32.51.41.18.07.35.13.51.17s.35.07.56.09v.8zM96.355 1.894c0 .46-.148.865-.444 1.21-.29.343-.66.515-1.09.515-.4 0-.75-.17-1.05-.5-.29-.33-.44-.71-.44-1.13 0-.45.15-.84.45-1.17s.64-.49 1.05-.49c.45 0 .82.15 1.1.46.29.31.43.67.43 1.09zm10.145 16.33c-.515.22-1 .403-1.46.553s-1.018.225-1.682.225c-.98 0-1.668-.253-2.067-.76-.39-.506-.59-1.22-.59-2.145V7.98h-2.11V6.815h2.16v-3.73h2.16v3.73h3.36V7.98h-3.33v6.696c0 .502.02.92.06 1.257.04.336.12.63.26.88.13.236.32.414.57.535.26.122.6.183 1.02.183.2 0 .49-.01.87-.05.39-.03.66-.08.82-.14v.89z"/>
+						</g>
+						<ellipse fill="#FFF" cx="18.049" cy="18.011" rx="17.861" ry="17.868"/>
+						<path fill="#2196F3" d="M6.547 5.927c1.376-.295 3.243-.517 5.743-.517 2.75 0 4.74.703 6.056 2.038 1.22 1.224 2.013 3.185 2.013 5.52 0 2.372-.61 4.296-1.75 5.63-1.53 1.817-3.85 2.705-6.51 2.705-.7 0-1.32-.036-1.83-.186v9.45H6.54V5.927zm3.73 11.598c.488.184 1.07.222 1.832.222 2.81 0 4.52-1.703 4.52-4.595 0-2.777-1.59-4.224-4.19-4.224-1.04 0-1.77.113-2.17.223v8.38zm10.703.172c.477.4 1.12.78 2.067.825.97.044 1.588-.665 1.682-1.68.08-.88-.21-1.53-1.04-2.487-1.06-1.203-1.43-2.65-1.3-4.023.29-2.944 2.4-5.212 5.4-4.975 1.13.092 1.97.422 2.41.82l-1.01 2.917c-.36-.29-.98-.572-1.52-.615-1.08-.09-1.83.54-1.93 1.62-.08.81.25 1.33.81 2 1.35 1.49 1.69 3.1 1.56 4.34-.34 3.53-2.55 5.33-5.57 5.09-1.21-.1-2.25-.61-2.67-1.04l1.08-2.82zm-5.297 10.24l-1.835 2.097v-4.19l1.835 2.094zm4.694 0l-1.832 2.097v-4.19l1.832 2.094zm4.695 0l-1.833 2.097v-4.19l1.83 2.094zm4.698 0l-1.835 2.097v-4.19l1.836 2.094z"/>
+						<path d="M46.188 32.008h-4.07l-1.06 3.277H38.95l4.29-12.86h1.81l4.29 12.86h-2.09l-1.06-3.277zm-2.05-6.487c-.38 1.35-.716 2.47-1.012 3.38l-.37 1.15h2.794l-.37-1.14c-.293-.91-.63-2.03-1.01-3.37h-.033zm14.732.77c0 .9-.208 1.66-.625 2.29-.417.63-1.063 1.09-1.935 1.39V30l3.215 5.286H57.15l-2.94-4.98h-1.357v4.98h-1.98v-12.86h3.29c.543 0 1.05.037 1.518.11.47.075.87.185 1.21.333.64.28 1.13.71 1.47 1.28.35.56.52 1.28.52 2.14zm-5.04 2.05c.453 0 .837-.02 1.152-.07.315-.05.58-.12.796-.21.398-.18.674-.42.828-.73.154-.31.23-.67.23-1.07 0-.34-.06-.65-.182-.91s-.327-.47-.618-.63c-.188-.1-.425-.18-.71-.22-.287-.05-.64-.07-1.06-.07h-1.413v3.94h.978zm17.48.52c0 .98-.116 1.88-.35 2.7-.235.82-.577 1.52-1.027 2.11s-1 1.05-1.656 1.38c-.654.33-1.4.49-2.234.49-.834 0-1.58-.16-2.233-.49-.654-.32-1.206-.78-1.656-1.37s-.792-1.29-1.026-2.1c-.234-.81-.352-1.71-.352-2.69s.117-1.88.352-2.69.576-1.52 1.026-2.11 1-1.04 1.656-1.37 1.4-.49 2.233-.49c.835 0 1.58.17 2.234.49s1.206.79 1.656 1.38.792 1.29 1.026 2.11.35 1.72.35 2.7zm-2.043 0c0-.78-.08-1.46-.242-2.05-.162-.58-.385-1.07-.67-1.46-.286-.39-.625-.68-1.018-.87s-.824-.29-1.292-.29c-.468 0-.9.1-1.292.29-.394.19-.732.49-1.018.88-.286.39-.51.88-.67 1.47-.162.59-.242 1.27-.242 2.06s.08 1.47.242 2.05c.162.59.385 1.07.67 1.46s.625.68 1.018.88c.393.2.824.3 1.292.3.47 0 .9-.1 1.292-.292s.732-.485 1.018-.873c.285-.39.51-.87.67-1.46.162-.59.242-1.27.242-2.05zm8.62 6.67c-.566 0-1.075-.06-1.528-.2-.46-.13-.86-.32-1.2-.56-.35-.24-.64-.55-.88-.9-.25-.35-.44-.76-.58-1.21-.12-.35-.21-.75-.26-1.19s-.08-.92-.08-1.46v-7.58h1.98v7.36c0 .91.09 1.62.27 2.13.2.57.5.98.89 1.24s.85.38 1.39.38c.53 0 .99-.12 1.39-.38s.69-.66.89-1.23c.18-.51.27-1.22.27-2.13v-7.36h1.98V30c0 .54-.03 1.025-.08 1.46-.05.437-.14.834-.26 1.192-.15.45-.34.85-.59 1.207-.25.35-.55.65-.9.9-.35.24-.76.43-1.22.56-.46.13-.97.2-1.537.2zm12.737-7.12c.776 1.32 1.406 2.48 1.89 3.5h.05c-.065-1.67-.098-2.89-.098-3.65v-5.83h1.98v12.86H92.37l-3.524-5.92c-.62-1.02-1.26-2.21-1.922-3.56h-.05c.066 1.58.098 2.8.098 3.67v5.82h-1.98V22.43h2.077l3.55 5.976zm6.406 6.88V22.43h2.86c.252 0 .51.01.77.03.26.02.516.046.764.084.247.04.487.087.72.14.23.057.443.12.637.2.58.217 1.09.512 1.53.883.44.372.81.81 1.11 1.317.3.505.53 1.07.68 1.695.15.62.23 1.3.23 2.03 0 .69-.06 1.34-.19 1.94-.13.6-.32 1.15-.59 1.65-.26.5-.59.94-.99 1.32-.4.38-.87.69-1.42.93-.45.2-.97.36-1.56.46-.58.1-1.23.15-1.96.15h-2.57zm2.795-1.97c1.157 0 2.063-.19 2.714-.56.57-.34 1.01-.83 1.3-1.48.29-.65.44-1.47.44-2.48 0-.52-.05-1-.15-1.42s-.24-.8-.42-1.13-.41-.61-.67-.85c-.27-.24-.56-.43-.89-.58-.31-.14-.65-.24-1.03-.3s-.8-.09-1.27-.09H99v8.92h.817z" fill="#FFF" stroke="#FFF" stroke-miterlimit="10"/>
+					</svg>
+				</a>
+			</li>
+		</ul>
+		<ul class="nav nav-list pull-right">
+			<!-- indicates horizontal scrolling is possible -->
+			<!-- currently not used
+			<li id="tooltip_03">
+				<a data-toggle="dropdown">
+					<span class="access-hide">Horizontales Navigieren möglich!</span>
+					<span class="icon">
+					<div class="swipe">
+						<i class="fa fa-long-arrow-left"></i>
+						<i class="fa fa-hand-o-up"></i>
+						<i class="fa fa-long-arrow-right"></i>
+					</div> </span>
+				</a>
+			</li>
+			-->
+			
+			<!-- language switch engl/german-->
+			<!-- currently not used, occupies too much space on small (mobile) devices, but should be used on tablet/desktop
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown">
+				<span class="access-hide">Sprachauswahl</span>
+				<span class="icon icon-more-vert icon-lg"></span>
+				</a>
+				<ul class="dropdown-menu">
+
+					<li>
+						<a href="javascript:void(0); javascript:mReset();"><span class="icon icon-check-box margin-right-half"></span>&nbsp; Deutsch</a>
+					</li>
+					<li>
+						<a href="javascript:void(0); javascript:mReset();"><span class="icon icon-check-box-outline-blank margin-right-half"></span>&nbsp; Englisch</a>
+					</li>
+				</ul>
+			</li>
+			-->
+			
+			<li  id="tooltip_04">
+				<a data-toggle="menu" href="#search">
+					<span class="access-hide">Suche</span>
+					<span class="icon icon-search icon-lg"></span>
+				</a>
+			</li>
+			<li  id="tooltip_05">
+				<a data-toggle="menu" href="#profile">
+					<span class="access-hide">www.projekte-sanieren.de</span>
+					<!-- not used:  <span class="avatar avatar-sm"><img alt="www.projekte-sanieren.de" src="images/users/avatar-001.jpg"></span> -->
+					<span class=" icon icon-location-history icon-lg"></span>
+				</a>
+			</li>
+		</ul>
+	</header>
+<!-- ********** END OF HEADER-MENU ********** -->
+<!-- ********** START OF SIDE-MENUS ********** -->
+	<nav class="menu" id="menu">
+		<div class="menu-scroll">
+			<div class="menu-wrap">
+				<div class="menu-content">
+					<ul class="nav">
+						<li class="active">
+							<a  href="javascript:$.fn.fullpage.moveTo(1, 1); mReset();">INHALT:</a>
+						</li>
+						<li>
+							<a class="waves-color-blue waves-effect icon icon-collections" href="javascript:$.fn.fullpage.moveTo(1, 0); mReset();">&ensp; Start-Seite</a>
+						</li>
+						<li>
+							<a class="waves-color-blue waves-effect icon icon-filter-1" href="javascript:$.fn.fullpage.moveTo(2, 0); mReset();" >&ensp; Zeit für Veränderung</a>
+						</li>
+						<li>
+							<a class="waves-color-blue waves-effect icon icon-filter-2" href="javascript:$.fn.fullpage.moveTo(3, 0); mReset();">&ensp; 5<sup>D</sup>-Audit</a>
+						</li>
+						<li>
+							<a class="waves-color-blue waves-effect icon icon-filter-3" href="javascript:$.fn.fullpage.moveTo(4, 0); mReset();">&ensp; Expertise</a>
+							<span class="menu-collapse-toggle collapsed" data-target="#expertise" data-toggle="collapse"><i class="icon icon-close menu-collapse-toggle-close"></i><i class="icon icon-add menu-collapse-toggle-default"></i></span>
+							<ul class="menu-collapse collapse" id="expertise">
+								<li>
+									<a href="javascript:$.fn.fullpage.moveTo(4, 1); mReset();">Sourcing (In- & Outsourcing)</a>
+								</li>
+								<li>
+									<a href="javascript:$.fn.fullpage.moveTo(4, 2); mReset();">IT-Projekte</a>
+								</li>
+								<li>
+									<a href="javascript:$.fn.fullpage.moveTo(4, 3); mReset();">Organisations- & Prozess</a>
+								</li>
+								<li>
+									<a href="javascript:$.fn.fullpage.moveTo(4, 4); mReset();">Operations- & KVP</a>
+								</li>
+								<li>
+									<a href="javascript:$.fn.fullpage.moveTo(4, 5); mReset();">Investition</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a class="waves-color-blue waves-effect icon icon-filter-4" href="javascript:$.fn.fullpage.moveTo(5, 0); mReset();">&ensp; schnelle Antworten</a>
+						</li>
+						<li>
+							<a class="waves-color-blue waves-effect icon icon-filter-5" href="javascript:$.fn.fullpage.moveTo(6, 0); mReset();">&ensp; unsere 5<sup>&nbsp;by 5</sup> Methode</a>
+							<span class="menu-collapse-toggle collapsed" data-target="#5by5" data-toggle="collapse"><i class="icon icon-close menu-collapse-toggle-close"></i><i class="icon icon-add menu-collapse-toggle-default"></i></span>
+							<ul class="menu-collapse collapse" id="5by5">
+								<li>
+									<a href="javascript:$.fn.fullpage.moveTo(6, 1); mReset();">accept<b>.</b>it &ensp;<small>[das Eingestehen]</small></a>
+								</li>
+								<li>
+									<a href="javascript:$.fn.fullpage.moveTo(6, 2); mReset();">buy<b>.</b>it &ensp;<small>[das Überzeugen]</small></a>
+								</li>
+								<li>
+									<a href="javascript:$.fn.fullpage.moveTo(6, 3); mReset();">survive<b>.</b>it &ensp;<small>[der Notfallkoffer]</small></a>
+								</li>
+								<li>
+									<a href="javascript:$.fn.fullpage.moveTo(6, 4); mReset();">tailor<b>.</b>it &ensp;<small>[die Turnaround-Planung]</small></a>
+								</li>
+								<li>
+									<a href="javascript:$.fn.fullpage.moveTo(6, 5); mReset();">turn<b>.</b>it &ensp;<small>[die Umsetzung]</small></a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a class="waves-color-blue waves-effect icon icon-filter-6" href="javascript:$.fn.fullpage.moveTo(7, 0); mReset();">&ensp; Turnaround-Wissen</a>
+						</li>
+						<li>
+							<a class="waves-color-blue waves-effect icon icon-filter-7" href="javascript:$.fn.fullpage.moveTo(8, 0); mReset();">&ensp; Referenzen</a>
+						</li>
+						<li>
+							<a class="waves-color-blue waves-effect icon icon-filter-8" href="javascript:$.fn.fullpage.moveTo(9, 0); mReset();">&ensp; Vorteile externer Beratung</a>
+						</li>
+						<li>
+							<a class="waves-color-blue waves-effect icon icon-filter-9" href="javascript:$.fn.fullpage.moveTo(10, 0); mReset();">&ensp; Beratungs-Pakete</a>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li>
+							<a class="menu-toggle"  data-toggle="menu" href="#profile"><small>Firma, AGB, Newsletter &amp; mehr</small></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<nav class="menu menu-right" id="profile">
+		<div class="menu-scroll">
+			<div class="menu-wrap">
+				<div class="menu-top">
+					<div class="menu-top-img">
+						<img alt="projekte-sanieren.de" src="assets/images/general/landscape_profile.jpg">
+					</div>
+					<div class="menu-top-info">
+						<a class="menu-top-user" href="javascript:void(0)"><span class="avatar pull-left"><img alt="PS | Projekte sanieren mit Power!" src="assets/images/users/avatar-001.jpg"></span>Wir retten Projekte!</a>
+					</div>
+					<div class="menu-top-info-sub">
+						<small>www.projekte-sanieren.de</small>
+					</div>
+				</div>
+				<div class="menu-content">
+					<ul class="nav nav-right">
+						<li>
+							<a data-toggle="modal" href="javascript:$.fn.fullpage.moveTo(11, 0); mReset();"><span class="icon icon-camera"></span>Wer wir sind</a>
+						</li>
+						<li>
+							<a data-toggle="modal" href="#modal-contact"><span class="icon icon-quick-contacts-mail"></span>Kontakt</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)"><span class="icon icon-insert-drive-file"></span>Unsere AGB's</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)"><span class="icon icon-insert-link"></span>Newsletter-Anmeldung</a>
+						</li>
+						<li>
+							<a href="page-login.html"><span class="icon icon-lock"></span>geschützter Projektraum</a>
+						</li>
+						<li>
+							<a href="javascript:$.fn.fullpage.moveTo(10, 0); mReset();"><span class="icon icon-directions"></span>Route (Google-Maps)</a>
+						</li>
+						<li>
+							<a href="javascript:$.fn.fullpage.moveTo(11, 0); mReset();"><span class="icon icon-exit-to-app"></span>Impressum</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="menu menu-right menu-search" id="search">
+		<div class="menu-scroll">
+			<div class="menu-wrap">
+				<div class="menu-top">
+					<div class="menu-top-info-suche">
+						<form class="menu-top-form">
+							<label class="access-hide" for="menu-search">Suche</label>
+							<input class="form-control form-control-inverse menu-search-focus" id="menu-search" placeholder="Suche" type="search">
+							<button class="access-hide" type="submit">Suche</button>
+						</form>
+					</div>
+				</div>
+				<div class="menu-content">
+					<div class="menu-content-inner">
+						<p><strong>Was andere suchen:</strong></p>
+						<ul>
+							<li><a href="javascript:void(0)">Audit Projekt</a></li>
+							<li><a href="javascript:void(0)">Turnaround</a></li>
+							<li><a href="javascript:void(0)">Projektrettung</a></li>
+							<li><a href="javascript:void(0)">Sanierung Vorgehen</a></li>
+							<li><a href="javascript:void(0)">Kosten Audit</a></li>
+						</ul>
+						<p><strong>Vorschläge vom Editor:</strong></p>
+						<ul>
+							<li><a href="javascript:void(0)">Wissen: SWOT Assessment</a></li>
+							<li><a href="javascript:void(0)">Methode: Vorgehen Audit</a></li>
+							<li><a href="javascript:void(0)">Psychologie: Akzeptanz</a></li>
+							<li><a href="javascript:void(0)">Methode: 5by&#x2075; - Modell</a></li>
+							<li><a href="javascript:void(0)">Wissen: die grössten Fehler</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- ********** START OF SIDE-MENUS ********** -->
+<!-- ********** START OF CONTENT AREA ********** -->
+	<div class="content">
+		<div id="fullpage-sections-container">
+
+<!-- START: SECTION 00 = Home -->
+			<div class="section" id="section00">
+				<div class="slide" id="slide1">
+					<div class="intro">
+						<div class="lazyload" data-include="content/00/section_00-00.html"  data-lazyqueue="0001"></div>
+					</div>
+				</div>
+				<div class="slide" id="slide2">
+						<div class="lazyload" data-include="content/00/section_00-01.html"  data-lazyqueue="0002"></div>
+				</div>
+			</div>
+
+<!-- START: SECTION 01 = Zeit für Veränderung -->
+			<div class="section" id="section01">
+				<div class="slide" id="slide1">
+					<div class="intro">
+						<div class="lazyload" data-include="content/01/section_01-00.html"  data-lazyqueue="0100"></div>
+					</div>
+				</div>
+				<div class="slide" id="slide2">
+						<div class="lazyload" data-include="content/01/section_01-01.html"  data-lazyqueue="0101"></div>
+				</div>
+				<div class="slide" id="slide3">
+						<div class="lazyload" data-include="content/01/section_01-02.html"  data-lazyqueue="0102"></div>
+				</div>
+				<div class="slide" id="slide4">
+						<div class="lazyload" data-include="content/01/section_01-03.html"  data-lazyqueue="0103"></div>
+				</div>
+			</div>
+
+<!-- START: SECTION 02 = 5D-Audit -->
+			<div class="section" id="section02">
+				<div class="slide" id="slide1">
+					<div class="intro">
+						<div class="lazyload" data-include="content/02/section_02-00.html"  data-lazyqueue="0200"></div>
+					</div>
+				</div>
+				<div class="slide" id="slide2">
+						<div class="lazyload" data-include="content/02/section_02-01.html"  data-lazyqueue="0201"></div>
+				</div>
+				<div class="slide" id="slide3">
+						<div class="lazyload" data-include="content/02/section_02-02.html"  data-lazyqueue="0202"></div>
+				</div>
+				<div class="slide" id="slide4">
+						<div class="lazyload" data-include="content/02/section_02-03.html"  data-lazyqueue="0203"></div>
+				</div>
+				<div class="slide" id="slide5">
+						<div class="lazyload" data-include="content/02/section_02-04.html"  data-lazyqueue="0204"></div>
+				</div>
+				<div class="slide" id="slide6">
+						<div class="lazyload" data-include="content/02/section_02-05.html"  data-lazyqueue="0205"></div>
+				</div>
+			</div>
+
+<!-- START: SECTION 03 = Expertise -->
+			<div class="section" id="section03">
+				<div class="slide" id="slide1">
+					<div class="intro">
+						<div class="lazyload" data-include="content/03/section_03-00.html"  data-lazyqueue="0300"></div>
+					</div>
+				</div>
+				<div class="slide" id="slide2">
+						<div class="lazyload" data-include="content/03/section_03-01.html"  data-lazyqueue="0301"></div>
+				</div>
+				<div class="slide" id="slide3">
+						<div class="lazyload" data-include="content/03/section_03-02.html"  data-lazyqueue="0302"></div>
+				</div>
+				<div class="slide" id="slide4">
+						<div class="lazyload" data-include="content/03/section_03-03.html"  data-lazyqueue="0303"></div>
+				</div>
+				<div class="slide" id="slide5">
+						<div class="lazyload" data-include="content/03/section_03-04.html"  data-lazyqueue="0304"></div>
+				</div>
+				<div class="slide" id="slide6">
+						<div class="lazyload" data-include="content/03/section_03-05.html"  data-lazyqueue="0305"></div>
+				</div>
+			</div>
+
+<!-- START: SECTION 04 = schnelle Antworten -->
+			<div class="section" id="section04">
+				<div class="slide" id="slide1">
+					<div class="intro">
+						<div class="lazyload" data-include="content/04/section_04-00.html"  data-lazyqueue="0400"></div>
+					</div>
+				</div>
+				<div class="slide" id="slide2">
+						<div class="lazyload" data-include="content/04/section_04-01.html"  data-lazyqueue="0401"></div>
+				</div>
+				<div class="slide" id="slide3">
+						<div class="lazyload" data-include="content/04/section_04-02.html"  data-lazyqueue="0402"></div>
+				</div>
+				<div class="slide" id="slide4">
+						<div class="lazyload" data-include="content/04/section_04-03.html"  data-lazyqueue="0403"></div>
+				</div>
+			</div>
+
+<!-- START: SECTION 05 = 5by5-Turnaround Methode-->
+			<div class="section" id="section05">
+				<div class="slide" id="slide1">
+					<div class="intro">
+						<div class="lazyload" data-include="content/05/section_05-00.html"  data-lazyqueue="0500"></div>
+					</div>
+				</div>
+				<div class="slide" id="slide2">
+						<div class="lazyload" data-include="content/05/section_05-01.html"  data-lazyqueue="0501"></div>
+				</div>
+				<div class="slide" id="slide3">
+						<div class="lazyload" data-include="content/05/section_05-02.html"  data-lazyqueue="0502"></div>
+				</div>
+				<div class="slide" id="slide4">
+						<div class="lazyload" data-include="content/05/section_05-03.html"  data-lazyqueue="0503"></div>
+				</div>
+				<div class="slide" id="slide5">
+						<div class="lazyload" data-include="content/05/section_05-04.html"  data-lazyqueue="0504"></div>
+				</div>
+				<div class="slide" id="slide6">
+						<div class="lazyload" data-include="content/05/section_05-05.html"  data-lazyqueue="0505"></div>
+				</div>
+			</div>
+
+<!-- START: SECTION 06 = Turnaround Wissen -->
+			<div class="section" id="section06">
+				<div class="slide" id="slide1">
+					<div class="intro">
+						<div class="lazyload" data-include="content/06/section_06-00.html"  data-lazyqueue="0600"></div>
+					</div>
+				</div>
+			</div>
+
+<!-- START: SECTION 07 Referenzen =  -->
+			<div class="section" id="section07">
+				<div class="slide" id="slide1">
+					<div class="intro">
+						<div class="lazyload" data-include="content/07/section_07-00.html"  data-lazyqueue="0700"></div>
+					</div>
+				</div>
+			</div>
+
+<!-- START: SECTION 08 = Vorteile -->
+			<div class="section" id="section08">
+				<div class="slide" id="slide1">
+					<div class="intro">
+						<div class="lazyload" data-include="content/08/section_08-00.html"  data-lazyqueue="0800"></div>
+					</div>
+				</div>
+			</div>
+
+<!-- START: SECTION 09 = Pakete -->
+			<div class="section" id="section09">
+				<div class="slide" id="slide1">
+					<div class="intro">
+						<div class="lazyload" data-include="content/09/section_09-00.html"  data-lazyqueue="0900"></div>
+					</div>
+				</div>
+				<div class="slide" id="slide2">
+						<div class="lazyload" data-include="content/09/section_09-01.html"  data-lazyqueue="0901"></div>
+				</div>
+				<div class="slide" id="slide3">
+						<div class="lazyload" data-include="content/09/section_09-02.html"  data-lazyqueue="0902"></div>
+				</div>
+				<div class="slide" id="slide4">
+						<div class="lazyload" data-include="content/09/section_09-03.html"  data-lazyqueue="0903"></div>
+				</div>
+				<div class="slide" id="slide5">
+						<div class="lazyload" data-include="content/09/section_09-04.html"  data-lazyqueue="0903"></div>
+				</div>
+				<div class="slide" id="slide6">					
+						<div class="lazyload" data-include="content/09/section_09-05.html"  data-lazyqueue="0905"></div>
+				</div>
+			</div>
+
+<!-- START: SECTION 10 = Firma & Impressum -->
+			<div class="section" id="section10">
+				<div class="intro">
+					<div class="lazyload" data-include="content/10/section_10-00.html"  data-lazyqueue="1000"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- ********** END OF CONTENT AREA ********** -->	
+<!-- START: BUTTONS AND MODALWINDOWS -->
+
+	<!-- START: Indikator für Seiten, hoch/runter/rechts/links -->	
+	<div class="pindicator-container">
+		<div class="pindicator">
+			<span class="fbtn-ori icon icon-arrow-drop-up" style="font-size: 60px;"></span>
+			<a id="tooltip_03">
+			<div class="swipe" style="font-size: 20px;">
+				<i class="fa fa-long-arrow-left"></i>
+				<i class="fa fa-hand-o-up"></i>
+				<i class="fa fa-long-arrow-right"></i>
+			</div>
+			</a>
+			<span class="fbtn-ori icon icon-arrow-drop-down" style="font-size: 60px"></span>
+		</div>
+	</div>
+	<!-- START: roter Kommunikations-Button unten -->	
+	<div class="fbtn-container">
+		<div class="fbtn-inner">
+			<a class="fbtn fbtn-red fbtn-lg" data-toggle="dropdown">
+				<span class="fbtn-text">Kontaktieren Sie uns!</span>
+				<span class="fbtn-ori icon icon-apps"></span>
+				<span class="fbtn-sub icon icon-close"></span>
+			</a>
+			<div class="fbtn-dropdown">
+				<a class="fbtn fbtn-blue" href="javascript:void(0)"><span class="fbtn-text">Chatten</span><span class="icon icon-forum"></span></a>
+				<a class="fbtn fbtn-green" href="javascript:void(0)"><span class="fbtn-text">Anrufen</span><span class="icon icon-phone-in-talk"></span></a>
+				<a class="fbtn fbtn-yellow" href="javascript:void(0)"><span class="fbtn-text">Schreiben</span><span class="icon icon-email"></span></a>
+				<a class="fbtn fbtn-purple" href="javascript:void(0)"><span class="fbtn-text">Treffen</span><span class="icon icon-time-to-leave"></span></a>
+			</div>
+		</div>
+	</div>
+	<!-- START: Modal-Window mit Kommunikations-Informationen -->	
+	<div aria-hidden="true" class="modal fade" id="modal-iframe-firma" role="dialog" tabindex="-1">
+		<div class="modal-dialog modal-full">
+			<div class="modal-content">
+				<div class="modal-content">
+					<iframe class="iframe-seamless" src="ui-modal-iframe_firma.html" title="Über die Firma"></iframe>
+				</div>
+				<div class="modal-footer">
+					<p class="text-right"><button class="btn btn-flat btn-alt" data-dismiss="modal" type="button">OK</button></p>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div aria-hidden="true" class="modal fade" id="modal-contact" role="dialog" tabindex="-1">
+		<div class="modal-dialog modal-xs">
+			<div class="modal-content">
+				<div class="modal-heading">
+					<a class="modal-close" data-dismiss="modal">&times;</a>
+					<h2 class="modal-title">Schnellüberblick Kontaktdaten</h2>
+				</div>
+				<div class="modal-inner">
+					<div class="container-modal">
+						<div class="tile-wrap tile-wrap-animation">
+							<div class="tile">
+								<div class="pull-left tile-side">
+									<div class="avatar avatar-blue avatar-sm">
+										<span class="icon icon-question-answer"></span>
+									</div>
+								</div>
+								<div class="tile-inner">
+									<span>Chat, sofort</span>
+								</div>
+							</div>
+							<div class="tile">
+								<div class="pull-left tile-side">
+									<div class="avatar avatar-green avatar-sm">
+										<span class="icon icon-call"></span>
+									</div>
+								</div>
+								<div class="tile-inner">
+									<span>phone +49 30 440220 11</span>
+								</div>
+							</div>
+							<div class="tile">
+								<div class="pull-left tile-side">
+									<div class="avatar avatar-red avatar-sm">
+										<span class="icon icon-print"></span>
+									</div>
+								</div>
+								<div class="tile-inner">
+									<span>fax +49 30 440 220 20</span>
+								</div>
+							</div>
+							<div class="tile">
+								<div class="pull-left tile-side">
+									<div class="avatar avatar-blue avatar-sm">
+										<span class="icon icon-keyboard-voice"></span>
+									</div>
+								</div>
+								<div class="tile-inner">
+									<span>Skype Call</span>
+								</div>
+							</div>
+							<div class="tile">
+								<div class="pull-left tile-side">
+									<div class="avatar avatar-green avatar-sm">
+										<span class="icon icon-keyboard-voice"></span>
+									</div>
+								</div>
+								<div class="tile-inner">
+									<span>Google Call</span>
+								</div>
+							</div>
+							<div class="tile">
+								<div class="pull-left tile-side">
+									<div class="avatar avatar-red avatar-sm">
+										<span class="icon icon-email"></span>
+									</div>
+								</div>
+								<div class="tile-inner">
+									<span>info@projekte-sanieren.de</span>
+								</div>
+							</div>
+							<div class="tile">
+								<div class="pull-left tile-side">
+									<div class="avatar avatar-blue avatar-sm">
+										<span class="icon icon-location-on"></span>
+									</div>
+								</div>
+								<div class="tile-inner">
+									<span>Zeppelinstr. 1, 12529 Schönefeld</span>
+								</div>
+							</div>
+							<div class="tile">
+								<div class="pull-left tile-side">
+									<div class="avatar avatar-green avatar-sm">
+										<span class="icon icon-dvr"></span>
+									</div>
+								</div>
+								<div class="tile-inner">
+									<span>Anfrage-Formular</span>
+								</div>
+							</div>
+							<div class="tile">
+								<div class="pull-left tile-side">
+									<div class="avatar avatar-red avatar-sm">
+										<span class="icon icon-launch"></span>
+									</div>
+								</div>
+								<div class="tile-inner">
+									<span>Sonstiges</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<p class="text-right"><button class="btn btn-flat btn-alt" data-dismiss="modal" type="button">OK</button></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- END: BUTTONS AND MODALWINDOWS -->	
+
+<!-- START: JAVASCRIPTS -->
+	<!-- ie -->
+		<!--[if lt IE 9]>
+			<script src="js/IE-buggyfill_html5shiv.js" type="text/javascript"></script>
+			<script src="js/IE_buggyfill_respond.js" type="text/javascript"></script>
+	<![endif]-->
+	<!-- Info: script async not applied to material.js and fullPageScroll to avoid wrong rendering -->	
+	<!-- Info: jquery-1.11.3 because of IE support necessary -->	
+	<script src="assets/js/jquery_1.11.3.min.js" type="text/javascript"></script>
+	<script src="assets/js/material.base.min.js" type="text/javascript"></script>
+	<!-- START: buggyfill = to assure IE Support, esp. support of vh|vw|vmin|vmax + calc -->
+	<script src="assets/js/viewport-units-buggyfill_0.5.3.js" type="text/javascript"></script>
+    <script src="assets/js/viewport-units-buggyfill_0.5.3.hacks.js" type="text/javascript"></script>
+    <script  type="text/javascript">
+		// Start: viewport-units-buggyfill incl. IE Support (to be able to use vh|vw|vmin|vmax, + calc)
+		window.viewportUnitsBuggyfill.init({
+        refreshDebounceWait: 50,
+        hacks: window.viewportUnitsBuggyfillHacks
+      });
+    </script>
+	<!-- START: fullPage = scrolling Content-Pages, slimscroll = scrolling with keyboard arrows -->
+	<script src="assets/js/fullPage_2.6.7.min.js" type="text/javascript"></script>
+	<script src="assets/js/fullPage_2.6.7.slimscroll.min.js" type="text/javascript"></script>
+	<script  async type="text/javascript">
+		// Start: fullPageScroll (to be able to scroll vertically)
+		$(document).ready(function() {
+			$('#fullpage-sections-container').fullpage({
+				anchors: ['00_Home', '01_Veraenderungen', '02_5DAudit', '03_Expertise', '04_Antworten', '05_5by5Methode', '06_Wissen', '07_Referenz', '08_Vorteile', '09_Pakete', '10_Firma'],
+				// please deactivate next line if bg-transition is working >> because of bg-color transition : 
+				sectionsColor: ['#F27935', '#80AAE0', '#F0F0F0', '#4BACC6', '#ED9851', '#dd6558', '#36b391', '#D2D7D3', '#647aa6', '#f27935', '#797C82'],
+				// alte Farben: sectionsColor: ['#F27935', '#F4D03F', '#D2D7D3', '#ECF0F1', '#FBFAFB', '#dd6558', '#36b391', '#D2D7D3', '#647aa6', '#f27935', '#797C82'],
+				navigation: false, // Bullets als Naviagation
+				navigationPosition: 'right',
+				navigationTooltips: ['00 // Home', '01 // Zeit für Veränderungen', '02 // 5D-Audit', '03 // eXpertise', '04 // schnelle Antworten', '05 // 5 by 5 Turnaround Methode', '06 // Turnaround-Wissen', '07 // unsere Referenzen', '08 // Ihre Vorteile', '09 // Beratungs-Pakete', '10 // Firma & Impressum'],
+				loopHorizontal: false, // horizontal continous looping
+				continuousVertical: true, // keine Ende-Section
+				animateAnchor: false, // kein Scrollingeffekt bei #-Direktlink
+				controlArrows: false, // zeigt Navi - Pfeil für Slides an
+				slidesNavigation: false, // zeigt unten Navi-Bullets für Slides an
+				// fitToSection: false, // kein Anpassen der Groesse
+				// paddingTop: '34 px', // padding fuer Menu
+				scrollOverflow: true, // ermöglicht Scrollen von Section
+				verticalCentered: false, // keine Zentrierung
+				// responsiveWidth: 900, // kein Page-Effekt wenn kleiner 900 px (auch responsieHeight)
+
+				afterLoad: function(){
+			    	$('#callbacksDiv').append('<p>afterRender</p>');
+			    	console.log("afterRender ausgeführt");
+			    },
+			});
+		});
+	</script>
+	<!-- START: owl -->
+	<script src="assets/js/owl-carousel_2.0.0-beta.2.4.min.js" type="text/javascript"></script>
+
+
+	<!-- START: changes colors with transition after page is changed -->
+	<script type="text/javascript">	
+		// change background color with transition  --- not yet implemented
+	</script>
+
+	<!-- START: tooltipster = black tooltips -->
+    <script src="assets/js/tooltipster_v3.3.0.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	// tooltip activation
+	// some options: timer: '20', iconDesktop: 'true', autoClose: 'false', touchDevices: 'false'
+        $(document).ready(function() {
+            $('.tooltip').tooltipster();
+			$('#tooltip_01').tooltipster({
+				position: 'bottom-left',
+				content: $('<span>Navigationsmenü öffen!</span>')
+            });
+			$('#tooltip_02').tooltipster({
+				position: 'bottom-left',
+				content: $('<span>Zur Homepage!</span>')
+            });
+			$('#tooltip_03').tooltipster({
+				position: 'bottom-right',
+				content: $('<span>Bitte auch horizontal navigieren!</span>')
+            });
+			$('#tooltip_04').tooltipster({
+				position: 'bottom-right',
+				content: $('<span>Suche öffnen!</span>')
+            });
+			$('#tooltip_05').tooltipster({
+				position: 'bottom-right',
+				content: $('<span>Alles über uns!</span>')
+            });
+        });
+	</script>
+
+	<!-- START: lazysizes = lazyload of content within the content-pages -->	
+	<script src="assets/js/lazysizes_1.1.3.min.js" type="text/javascript"></script>
+	<script src="assets/js/lazysizes_1.1.3.include.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		// lazysizes = initiate lazyload for side-content = vertical pages
+		window.lazySizesConfig.preloadAfterLoad = false;
+	</script>
+	<script  type="text/javascript">
+		// generate context to be used in lazysized content-pages
+		(function(){
+			'use strict';
+			var init = function(context){
+
+			//magic slider
+
+
+			//something else
+
+			
+			
+			// end: something else
+				
+			//magic button
+				$('button.alert', context)
+					.css('textDecoration', 'underline')
+					.on('click', function(){
+						alert('yeah, this is dynamic');
+					})
+				;
+			};
+			
+		// lazyinclude initializing
+		$(function(){
+				init(document);
+				$(document).on('lazyincluded', function(e){
+					init(e.target);
+				});
+			});
+		})();
+	</script>	
+
+<!-- END: JAVASCRIPTS -->
+
+</body>
+
+</html>

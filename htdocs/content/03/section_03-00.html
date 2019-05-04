@@ -1,0 +1,109 @@
+<style>
+.exp_bubble_div
+{
+position: absolute;
+top: 200px;
+left: 600px;
+}
+.exp_bubble
+{
+	position: relative;
+	width: 100%px;
+	height: 250px;
+	text-align: center;
+	line-height: 100px;
+	background-color: #4BACC6;
+	border: 3px solid #fff;
+	/* keine Rundung
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	*/
+	-webkit-box-shadow: 2px 2px 4px #888;
+	-moz-box-shadow: 2px 2px 4px #888;
+	box-shadow: 2px 2px 4px #888;
+	box-sizing: content-box;
+}
+
+/* the bigger transparent triangle in the background */
+.exp_bubble:before
+{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 50px;
+	bottom: 250px;
+	
+	border: 3px solid;
+	/* Kalkulation: 40px + 2 x 3px border = 46px, 100px + ?probieren? */
+	border-width: 45px 0 0 112px;
+	border-color:  transparent transparent #fff #fff;
+}
+/* the smaller blue triangle in the foreground */
+.exp_bubble:after
+{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	/* Kalkulation: linke Position von :before - border der großen Box, d.h. 50 + 3px = 53px */
+	left: 53px;
+	bottom: 250px;
+	/* border = 2 x border der großen Box = 2 x 3px = 6px */
+	border: 6px solid;
+	/* Höhe Dreieck = 40, Breite Dreick = 100 -- border-width ist Basis für :before - Kalkulation,  */
+	border-width: 40px 0 0 100px;
+	border-color:  transparent transparent #4BACC6 #4BACC6
+}
+</style>
+
+<div class="content" >
+	<div class="content-inner">
+		<div class="container" style="margin-top:55px">
+			<!-- START: 1st row -->
+			<div class="row">
+				<!-- right div -->
+				<div class="col-xs-12	col-sm-12	col-md-12	col-lg-12">
+						<h1>Unsere <span style="color: #FFC107; font-size: 98px; font-stretch: extra-condensed; vertical-align
+: -16px; font-style: italic;">X</span>pertise liegt <br> im Turnaround!</h1>
+				</div>				
+			</div>	
+			<!-- END: 1st row -->
+			
+			<!-- START: 2nd row -->
+			<div class="row">
+				<!-- right div with tiles, only for middle/large: tab-landscape & desktop -->
+				<div class="hidden-xs	col-sm-6	col-md-6	col-lg-6">
+					<p style="font-size: 14px; color: #fff; margin-top: 0px;">
+						Als Projekt-Sanierer werden wir mit unterschiedlichen Herausforderungen konfrontiert. 
+						Diese variieren stark in Projekt-Größe, Komplexität und auch Branche.
+						Dabei widmen wir uns spezifisch-methodischen Fehlern die sich in allen Branchen wieder finden.
+					</p>					
+				</div>
+				<!-- right div with tiles -->
+				<div class="col-xs-12	col-sm-5	col-md-5	col-lg-5">
+					<!-- START: tiles -->
+					<div class="exp_bubble">
+						<div style="color: #fff; text-align: left; padding: 20px 0px 0px 30px;">
+							<h3 style="margin: 0px">Sourcing-Projekte</h3>
+							<ul>
+								<li>Outsourcing, Insourcing</li>
+								<li>Vertragsoptimierung</li>
+								<li>Operations-Model</li>
+							</ul>
+						</div>							
+						<div style="position: bottom; text-align: right; padding: 0px 10px 0px 15px">						
+							<button type="button" class="btn btn-yellow" style="margin-bottom: 35px;">> Details</button>	
+						</div>
+					</div>
+						<!-- END: 10 x tiles -->
+				</div>
+					<!-- END: tiles -->	
+			</div>				
+			<!-- END: row -->
+		</div>
+	</div>
+</div>
+
+

@@ -1,0 +1,149 @@
+<div class="content" >
+	<div class="content-inner">
+		<div class="container" style="margin-top:55px">
+			<!-- START: 1st row -->
+			<div class="row">	
+				<!-- left div -->
+				<div class="col-xs-12	col-sm-4	col-md-4	col-lg-4">
+					<h1 style="margin-bottom: 0px;">FAQ</h1><br>
+					<p style="font-size: 14px; color: #fff; margin-top: 0px;">Schnelle Antworten auf Ihre Fragen...</p><br>
+					<button type="button" class="btn btn-yellow">Eigene Frage stellen!</button>
+				</div>
+
+				<!-- right div -->
+				<div class="col-xs-12	col-sm-7 col-sm-offset-1	col-md-7 col-md-offset-1	col-lg-7 col-md-offset-1">
+					<!-- Start: FAQ-Tiles -->
+					<div class="tile-wrap" id="FAQ">
+
+					
+						<div>
+							<div class="tile-toggle" data-parent="#FAQ" data-target="#tile-collapse-1" data-toggle="tile">
+								<div class="pull-left tile-side">
+									<div class="avatar-sm">
+										<span class="icon icon-expand-more"></span>
+									</div>
+								</div>
+								<div class="tile-inner">
+									<div class="text-overflow">Was muss ich tun, um die Uhrzeit zu erfahren?</div>
+								</div>
+							</div>
+							<div class="tile-active-show collapse" id="tile-collapse-1">
+								<div class="tile-sub">
+									<small>
+										Die Uhrzeit erfahren Sie ganz einfach, in dem Sie auf die Uhr schauen, probieren Sie es aus.
+									</small>
+								</div>
+							</div>
+						</div>
+
+
+						<div>
+							<div class="tile-toggle" data-parent="#FAQ" data-target="#tile-collapse-2" data-toggle="tile">
+								<div class="pull-left tile-side">
+									<div class="avatar-sm">
+										<span class="icon icon-expand-more"></span>
+									</div>
+								</div>
+								<div class="tile-inner">
+									<div class="text-overflow">Frage innerhalb der FAQ</div>
+								</div>
+							</div>
+							<div class="tile-active-show collapse" id="tile-collapse-2">
+								<div class="tile-sub">
+									<small>
+										Das ist die Antwort
+									</small>
+								</div>
+							</div>
+						</div>
+
+						
+					</div>
+				</div>				
+			</div>	
+			<!-- END: 1st row -->
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<!-- START: contact-slider on the bottom of page -->
+<div class = "contact_bottom">
+	<div class="owl-carousel_contact">
+		<div class="tile">
+			<div>
+				<div class="pull-left tile-side">
+					<div class="avatar avatar-red contact_avatar" style="font-size:35px;">
+						<span class="icon icon-forum"></span>
+					</div>
+				</div>
+				<div class="tile-inner">
+					<div class="contact_text1 text-overflow" style="color: red;">24h Sofort-Chat</div>
+					<div class="contact_text2">Anonym oder mit offenem Visier.<br> Wir stehen Ihnen rund um die Uhr zur Verfügung. Probieren Sie es aus! </div>
+				</div>
+			</div>
+		</div>			
+		<div class="tile">
+			<div>
+				<div class="pull-left tile-side">
+					<div class="avatar avatar-red contact_avatar" style="font-size:35px;">
+						<span class="icon icon-settings-phone"></span>
+					</div>
+				</div>
+				<div class="tile-inner">
+					<div class="contact_text1 text-overflow">Rückruf-Termin</div>
+					<div class="contact_text2">Gerade keine Zeit?<br> Gerne rufen wir Sie zurück, auch außerhalb Ihrer Arbeitszeit</div>
+				</div>
+			</div>
+		</div>			
+		<div class="tile">
+			<div>
+				<div class="pull-left tile-side">
+					<div class="avatar avatar-red contact_avatar">
+						<span class="icon icon-tab" style="font-size:35px;"></span>
+					</div>
+				</div>
+				<div class="tile-inner">
+					<div class="contact_text1 text-overflow">Kontakt-Formular</div>
+					<div class="contact_text2">Sie mögen es schriftlich?<br> Gern können Sie uns auch auf klassischer Weise kontaktieren</div>
+				</div>
+			</div>
+		</div>			
+	</div>						
+</div>
+<!-- END: contact-slider on the bottom of page -->
+	<script  async type="text/javascript">	
+		// owl2-Slider (to be able to slide any div horizontally)
+		$(document).ready(function() {
+			var owl = $('.owl-carousel_contact'); // indicator for correct owl slider
+				owl.owlCarousel({
+				margin:10, // margin-right(px) on item.
+				items: 3, // The number of items you want to see on the screen.
+				loop: true, // Inifnity loop. Duplicate last and first items to get loop illusion.
+				autoWidth: false, // Set non grid content. Try using width style on divs.
+				dots: false, // Show dots navigation.
+				// autoplay: false, // Autoplay.
+				autoplayHoverPause: false, // Pause on mouse hover.
+				autoplaySpeed: false, // autoplay speed.
+				smartSpeed: 200,  // Speed Calculate. Bewegungsgeschwindigkeit in ms..
+				fluidSpeed: 5, // Speed Calculate. Wechselgeschwindigkeit in s..
+				responsive:{
+								0:{
+									items:1,
+									autoplay: true
+								},
+								600:{
+									items:2,
+									autoplay: false
+								},
+								1000:{
+									items:3,
+									autoplay: false
+								}
+				}
+			});
+		})
+	</scrip

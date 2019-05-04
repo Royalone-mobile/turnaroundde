@@ -1,0 +1,219 @@
+<style type="text/css">
+	.clock_skewed {
+		-ms-transform: skew(-10deg, 15deg); /* IE 9 */
+		-webkit-transform: skew(-10deg, 15deg); /* Chrome, Safari, Opera */
+		transform: skew(-15deg, 0deg);
+	}
+</style>
+<div class="content" >
+	<div class="content-inner">
+		<div class="container" style="margin-top:55px">
+			<!-- START: row -->
+			<div class="row">
+			
+				<!-- right div with clock -->
+				<div class="col-xs-12	col-sm-4	col-md-4	col-lg-4">
+				
+					<object 
+						type="image/svg+xml" 
+						style="float: left" 
+						width="150%" 
+						height="150%"
+						class="clock_skewed"
+						style="position: absolute; top: 50%; width: 100%; height: 1px; overflow: visible "
+						>	
+																
+					<svg xmlns='http://www.w3.org/2000/svg'
+						xmlns:xlink='http://www.w3.org/1999/xlink'
+						version='1.1'
+						width='100%' height='100%'
+						viewBox='110 0 290 250'
+						contentScriptType = 'text/ecmascript'
+						onload='init(evt);startClock(evt)'
+					>
+
+					 <title>PS| Projekte Sanieren -- Time for Change!</title>
+					  
+					  <defs>
+						<g id='minuteMark'>
+						  <rect style='fill: #FFFFFF' x='-1' y='-90' width='2' height='3'/>
+						</g>
+						<g id='hourMarks'>
+						  <rect style='fill: #FFFFFF' x='-2' y='-90' width='4' height='7'/>
+						  <use xlink:href='#minuteMark' transform='rotate(6)'/>
+						  <use xlink:href='#minuteMark' transform='rotate(12)'/>
+						  <use xlink:href='#minuteMark' transform='rotate(18)'/>
+						  <use xlink:href='#minuteMark' transform='rotate(24)'/>
+						</g>
+					  </defs>
+					  <g id='Clock' stlye='stroke-width: 5'
+						  transform='translate(200 200) scale(2 2)'><title>Project sanieren | Uhr: Time for change</title>
+					 
+						<g id='clocks outside rim'>
+						  <circle style='fill: none; stroke: none; stroke-width: 3' cx='0' cy='0' r='95' />
+						</g>
+						<g id='marks for hours and minutes'>
+						  <use xlink:href='#hourMarks' transform='rotate(0)'/>  
+						  <use xlink:href='#hourMarks' transform='rotate(30)'/>  
+						  <use xlink:href='#hourMarks' transform='rotate(60)'/>  
+						  <use xlink:href='#hourMarks' transform='rotate(90)'/>  
+						  <use xlink:href='#hourMarks' transform='rotate(120)'/>  
+						  <use xlink:href='#hourMarks' transform='rotate(150)'/>  
+						  <use xlink:href='#hourMarks' transform='rotate(180)'/>  
+						  <use xlink:href='#hourMarks' transform='rotate(210)'/>  
+						  <use xlink:href='#hourMarks' transform='rotate(240)'/>  
+						  <use xlink:href='#hourMarks' transform='rotate(270)'/>  
+						  <use xlink:href='#hourMarks' transform='rotate(300)'/>  
+						  <use xlink:href='#hourMarks' transform='rotate(330)'/>
+						</g>
+
+
+
+						<g  id="Time for Change">
+							<circle fill="none" cx="-2" cy="0" r="135.936"/>
+							<path fill="#FFFFFF" d="M-29.958-72.457l-2.404,1.079l3.925,8.741l-2.903,1.303l-3.925-8.741l-2.363,1.061l-1.087-2.421l7.67-3.443
+								L-29.958-72.457z"/>
+							<path fill="#FFFFFF" d="M-22.87-64.704l-3.004,1.047L-29.9-75.21l3.004-1.047L-22.87-64.704z"/>
+							<path fill="#FFFFFF" d="M-7.371-68.198l-3.124,0.606l-2.23-6.744l-1.559,7.479l-1.239,0.241l-4.111-6.379l0.323,7.114l-3.115,0.605l-0.291-12.407
+								l3.089-0.6l3.672,5.935l1.326-6.905l3.115-0.604L-7.371-68.198z"/>
+							<path fill="#FFFFFF" d="M0.188-68.054l-6.962,0.166L-7.066-80.12l6.962-0.166l0.063,2.652l-3.781,0.09l0.05,2.088l3.576-0.085l0.063,2.652
+								l-3.575,0.085l0.052,2.187l3.782-0.09L0.188-68.054z"/>
+							<path fill="#FFFFFF" d="M13.27-76.145l-3.785-0.567l-0.31,2.065l3.449,0.517l-0.394,2.624l-3.448-0.517l-0.718,4.787l-3.146-0.472l1.813-12.1
+								l6.932,1.039L13.27-76.145z"/>
+							<path fill="#FFFFFF" d="M26.375-68.728c-0.493,1.586-1.454,2.814-2.882,3.685c-1.628,0.989-3.469,1.165-5.523,0.526
+								c-2.049-0.637-3.463-1.825-4.243-3.563c-0.683-1.526-0.778-3.083-0.285-4.669c0.226-0.725,0.599-1.424,1.121-2.096
+								c0.522-0.673,1.107-1.206,1.756-1.599c1.627-0.99,3.469-1.165,5.523-0.526c2.054,0.639,3.471,1.827,4.251,3.565
+								C26.776-71.88,26.87-70.32,26.375-68.728z M23.225-69.708c0.257-0.824,0.214-1.618-0.125-2.382
+								c-0.437-0.977-1.161-1.622-2.174-1.937c-0.699-0.217-1.391-0.218-2.08-0.002c-0.688,0.216-1.254,0.612-1.696,1.19
+								c-0.253,0.329-0.439,0.685-0.559,1.069c-0.246,0.79-0.202,1.578,0.13,2.365c0.412,0.976,1.133,1.623,2.163,1.943
+								c1.029,0.32,1.993,0.199,2.889-0.363C22.491-68.273,22.974-68.901,23.225-69.708z"/>
+							<path fill="#FFFFFF" d="M34.064-57.896l-3.519-1.8l-0.566-5.565l-2.139,4.181l-2.833-1.449l5.574-10.892l4.404,2.253
+								c1.287,0.659,2.042,1.532,2.265,2.619c0.181,0.878,0.057,1.738-0.373,2.578c-0.493,0.963-1.173,1.585-2.042,1.865
+								c-0.555,0.179-1.19,0.176-1.908-0.01L34.064-57.896z M33.862-67.318c0.198-0.387,0.224-0.786,0.076-1.196
+								c-0.14-0.386-0.505-0.73-1.098-1.034l-0.528-0.271l-1.388,2.713l0.528,0.271c0.598,0.306,1.091,0.401,1.481,0.286
+								C33.354-66.674,33.664-66.931,33.862-67.318z"/>
+							<path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M44.375-50.325
+								c-1.069-0.328-1.949-0.769-2.64-1.322c-1.203-0.964-1.972-2.211-2.308-3.743c-0.425-1.955-0.003-3.723,1.262-5.305
+								c1.27-1.586,2.906-2.385,4.907-2.398c1.567-0.008,2.96,0.476,4.178,1.451c0.662,0.531,1.277,1.287,1.845,2.27l-2.381,2.973
+								c-0.004-0.474-0.07-0.88-0.195-1.22c-0.23-0.623-0.6-1.139-1.108-1.546c-0.645-0.516-1.361-0.771-2.148-0.764
+								c-0.996,0.008-1.836,0.441-2.522,1.296c-0.682,0.851-0.917,1.763-0.708,2.737c0.166,0.77,0.571,1.413,1.215,1.929
+								c0.509,0.408,1.093,0.655,1.751,0.744c0.351,0.05,0.762,0.024,1.233-0.076L44.375-50.325z"/>
+							<path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M52.225-41.369l-2.126-2.368l3.789-3.401
+								l-3.066-3.415l-3.788,3.401l-2.126-2.368l9.104-8.174l2.125,2.368l-3.514,3.156l3.066,3.415l3.515-3.156l2.125,2.367
+								L52.225-41.369z"/>
+							<path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M58.993-30.67l-1.801-2.88l1.391-1.8
+								l-2.328-3.724L54-38.658l-1.782-2.85l12.869-2.495l1.839,2.942L58.993-30.67z M60.18-37.363l2.607-3.184l-4.015,0.935
+								L60.18-37.363z"/>
+							<path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M63.421-19.412l-1.174-2.958l4.806-8.205
+								l-6.965,2.765l-1.174-2.958l11.372-4.513l1.174,2.958l-4.797,8.201l6.956-2.761l1.174,2.958L63.421-19.412z"/>
+							<path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M72.661-7.584
+								c-1.303,0.247-2.394,0.302-3.271,0.164c-1.335-0.209-2.438-0.764-3.308-1.663c-0.834-0.869-1.379-1.982-1.636-3.339
+								c-0.418-2.207,0.011-4.044,1.291-5.509c0.969-1.109,2.244-1.813,3.823-2.112c1.75-0.332,3.319-0.088,4.709,0.731
+								c1.581,0.929,2.573,2.456,2.976,4.581c0.27,1.421,0.134,2.693-0.407,3.818c-0.383,0.802-1.032,1.549-1.947,2.24l-1.785-2.727
+								c0.513-0.36,0.877-0.734,1.094-1.123c0.306-0.558,0.396-1.17,0.27-1.835c-0.258-1.36-1.138-2.176-2.639-2.446
+								c-0.554-0.102-1.105-0.102-1.656,0.003c-1.142,0.216-2.025,0.759-2.649,1.628c-0.466,0.644-0.615,1.413-0.445,2.308
+								c0.151,0.795,0.501,1.381,1.051,1.759c0.362,0.248,0.85,0.363,1.464,0.344l-0.488-2.572l2.377-0.451L72.661-7.584z"/>
+							<path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M66.076,1.275l-0.259-6.959l12.226-0.457
+								l0.26,6.959l-2.651,0.099l-0.141-3.78l-2.087,0.078l0.133,3.574l-2.651,0.099l-0.134-3.574l-2.186,0.082l0.142,3.78L66.076,1.275z
+								"/>
+						</g>
+
+
+
+						<g id="Logo">
+							<path fill="#FFFFFF" d="M3.653-28.881c0.375,0.347,0.881,0.676,1.626,0.713c0.766,0.038,1.248-0.575,1.324-1.451
+								c0.067-0.764-0.162-1.326-0.816-2.153c-0.829-1.041-1.125-2.292-1.021-3.481c0.224-2.545,1.89-4.509,4.245-4.302
+								c0.892,0.078,1.55,0.364,1.904,0.708l-0.798,2.525c-0.277-0.253-0.768-0.496-1.193-0.532c-0.847-0.074-1.43,0.473-1.511,1.406
+								c-0.063,0.707,0.197,1.158,0.638,1.738c1.063,1.29,1.327,2.681,1.232,3.756c-0.267,3.054-2.007,4.613-4.383,4.405
+								c-0.954-0.084-1.771-0.525-2.102-0.896L3.653-28.881z"/>
+							<path fill="#FFFFFF" d="M-7.699-39.063c1.082-0.257,2.548-0.449,4.519-0.449c2.163,0,3.725,0.609,4.759,1.763
+								c0.961,1.058,1.587,2.756,1.587,4.775c0,2.051-0.481,3.718-1.371,4.872c-1.202,1.57-3.028,2.34-5.12,2.34
+								c-0.553,0-1.034-0.032-1.443-0.16v8.174h-2.932V-39.063z M-4.767-29.03c0.385,0.16,0.842,0.192,1.443,0.192
+								c2.212,0,3.557-1.474,3.557-3.974c0-2.404-1.25-3.654-3.293-3.654c-0.817,0-1.394,0.096-1.707,0.193V-29.03z"/>
+							<g>
+								<path fill="#FFFFFF" d="M-2.111-19.751l-1.479,1.972v-3.944L-2.111-19.751z"/>
+								<path fill="#FFFFFF" d="M1.675-19.751l-1.479,1.972v-3.944L1.675-19.751z"/>
+								<path fill="#FFFFFF" d="M5.461-19.751l-1.479,1.972v-3.944L5.461-19.751z"/>
+								<path fill="#FFFFFF" d="M9.248-19.751L7.77-17.779v-3.944L9.248-19.751z"/>
+							</g>
+							<path fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" d="M16.717-30.064
+								c0,9.039-7.327,16.365-16.363,16.365c-9.036,0-16.361-7.326-16.361-16.365c0-9.036,7.326-16.36,16.361-16.36
+								C9.39-46.424,16.717-39.1,16.717-30.064z"/>
+							</g>
+
+
+
+					  <g id='hourHand'>
+					  <polygon style='fill: #FFFFFF' points='-4 20 4 20 3 -55 -3 -55'/>
+						<animateTransform id='hourHandRotation' attributeName="transform"
+							type="rotate" values="0;360" dur="12h" additive="sum"
+							repeatCount="indefinite" restart="always"/>
+					  </g>
+					  
+					  <g id='minuteHand'>
+						<polygon style='fill: #FFFFFF' points='-3 18 3 18 2 -65 -2 -65'/>
+						<animateTransform  id='minuteHandRotation' attributeName="transform"
+						  type="rotate" dur="60min" calcMode="discrete"
+						  values='0;   6;  12;  18;  24;  30;  36;  42;  48;  54;
+								 60;  66;  72;  78;  84;  90;  96; 102; 108; 114;
+								120; 126; 132; 138; 144; 150; 156; 162; 168; 174;
+								180; 186; 192; 198; 204; 210; 216; 222; 228; 234;
+								240; 246; 252; 258; 264; 270; 276; 282; 288; 294;
+								300; 306; 312; 318; 324; 330; 336; 342; 348; 354'
+						  additive="sum" fill='FFFFFF'
+						  repeatCount="indefinite" restart="always"/>
+					  </g>
+
+					  <g id='secondHand' fill='#E80000'>
+						<circle cx='0' cy='0' r='3'/>
+						<rect x='-1.5' y='-68' width='3' height='90'/>
+
+						<circle id='circle for secondhand' cx='0' cy='-55' r='6'/>	
+
+						<animateTransform  id='secondHandRotation' attributeName="transform"
+							type="rotate" dur="60s" calcMode="discrete"
+							values='0;   6;  12;  18;  24;  30;  36;  42;  48;  54;
+								   60;  66;  72;  78;  84;  90;  96; 102; 108; 114;
+								  120; 126; 132; 138; 144; 150; 156; 162; 168; 174;
+								  180; 186; 192; 198; 204; 210; 216; 222; 228; 234;
+								  240; 246; 252; 258; 264; 270; 276; 282; 288; 294;
+								  300; 306; 312; 318; 324; 330; 336; 342; 348; 354; 0'
+							additive="replace" fill='FFFFFF'
+							repeatCount="indefinite" restart="always"/>
+						</g>
+					 
+					 </g>
+					 
+					 </object>
+
+					 <script type='text/ecmascript'><![CDATA[
+						// set correct time
+						if (window.svgDocument == null) {
+						  if (window.document)  svgDocument = document; // Opera
+						  else                  svgDocument = evt.target.ownerDocument; // Adobe?
+						}
+						var now = new Date();
+						var seconds = now.getHours()*3600 + now.getMinutes()*60 +
+									  now.getSeconds() + now.getMilliseconds()/1000.0;
+						var offset = '' + (-seconds) + 's';
+						svgDocument.getElementById('hourHandRotation').setAttribute('begin', offset);
+						svgDocument.getElementById('minuteHandRotation').setAttribute('begin', offset);
+						svgDocument.getElementById('secondHandRotation').setAttribute('begin', offset);
+					  ]]>
+					</script>
+
+					</svg>						
+				</div>
+	
+
+				<!-- right div with headline and content -->
+				<div class="col-xs-12	col-sm-7 col-sm-offset-1	col-md-7 col-md-offset-1	col-lg-7 col-md-offset-1">
+					<!-- START: tiles -->
+						<h1>Zeit für Veränderung!</h1>
+					<!-- END: tiles -->	
+				</div>				
+			</div>	
+			<!-- END: row -->
+		</div>
+	</div>
+</div>
